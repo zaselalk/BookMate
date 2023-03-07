@@ -1,0 +1,28 @@
+/* Colors
+     - #1569F7  -- Primary blue
+     - #3F37C9  -- Secondary purpal
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global utility classes */
+.btn {
+  text-decoration: none;
+  border: 1px solid #1569f7;
+  padding: 5px 20px;
+  border-radius: 4px;
+  color: #1569f7;
+}
+
+.btn-fill {
+  text-decoration: none;
+  border: 1px solid #1569f7;
+  padding: 5px 20px;
+  border-radius: 4px;
+  background: #1569f7;
+  color: aliceblue;
+}
