@@ -11,18 +11,17 @@
 }
 
 /* animation styles */
-.hidden{
+.hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
 }
 
-.show{
+.show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
- 
 }
 
 /* Global utility classes */
@@ -36,10 +35,9 @@
   font-size: 14px;
   text-align: center;
   transition-duration: 400ms;
-
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #1569f7;
   color: white;
   transition-duration: 400ms;
@@ -56,10 +54,9 @@
   font-size: 14px;
   text-align: center;
   transition-duration: 400ms;
-
 }
 
-.btn-fill:hover{
+.btn-fill:hover {
   transition-duration: 400ms;
   background-color: #1150bd;
 }
@@ -90,7 +87,7 @@ nav ul li {
   padding: 14px;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   color: #1569f7;
   transition-duration: 300ms;
   cursor: pointer;
