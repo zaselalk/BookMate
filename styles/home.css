@@ -1,3 +1,4 @@
+/* NAVGATION STYLES */
 nav {
   display: flex;
   justify-content: space-between;
@@ -16,6 +17,31 @@ nav ul li {
 nav div {
   padding: 0px 5px;
   display: flex;
+}
+
+/* FOOTER STYLES */
+footer {
+  background: #dee7fc;
+  padding: 5%;
+}
+
+.footer-contact div {
+  padding: 3px;
+}
+
+.footer-contact svg {
+  padding-right: 5px;
+}
+.footer-details {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HOME PAGE HEADINF STYLES */
+
+.heading {
+  padding: 5%;
 }
 
 #headingDiscription {
