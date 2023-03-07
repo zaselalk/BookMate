@@ -8,7 +8,7 @@ const books = {
         "Our library management system is designed to provide easy access to books, magazines, journals,",
       Samplediscription:
         "Our library management system is designed to provide easy access to books, magazines, journals,            ",
-      img: "search_img/bookImages/psychology.png",
+      img: "images/search_img/bookImages/psychology.png",
       filePath: "books/PsychologyOfmoney.pdf",
       pagePath: "index.html",
       stars: "4",
@@ -22,7 +22,7 @@ const books = {
         "Our library management system is designed to provide easy access to books, magazines, journals,",
       Samplediscription:
         "Our library management system is designed to provide easy access to books, magazines, journals,            ",
-      img: "search_img/bookImages/HowInnovation.png",
+      img: "images/search_img/bookImages/HowInnovation.png",
       filePath: "books/PsychologyOfmoney.pdf",
       pagePath: "HowInnovation.html",
       stars: "3",
@@ -74,7 +74,7 @@ function loadBooks(cate) {
         for (var s = 1; s <= details[x].stars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star-fill.svg";
+          star.src = "images/search_Img/star-fill.svg";
           starView.appendChild(star);
         }
 
@@ -83,7 +83,7 @@ function loadBooks(cate) {
         for (var s = 1; s <= emptyStars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star.svg";
+          star.src = "images/search_Img/star.svg";
           starView.appendChild(star);
         }
 
@@ -145,7 +145,7 @@ function loadBooks(cate) {
       for (var s = 1; s <= details[x].stars; s++) {
         var star = document.createElement("img");
         star.classList.add("star");
-        star.src = "search_Img/star-fill.svg";
+        star.src = "images/search_Img/star-fill.svg";
         starView.appendChild(star);
       }
 
@@ -154,7 +154,7 @@ function loadBooks(cate) {
       for (var s = 1; s <= emptyStars; s++) {
         var star = document.createElement("img");
         star.classList.add("star");
-        star.src = "search_Img/star.svg";
+        star.src = "images/search_Img/star.svg";
         starView.appendChild(star);
       }
 
@@ -233,7 +233,7 @@ function searchBook(cate) {
         for (var s = 1; s <= details[x].stars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star-fill.svg";
+          star.src = "images/search_Img/star-fill.svg";
           starView.appendChild(star);
         }
 
@@ -242,7 +242,7 @@ function searchBook(cate) {
         for (var s = 1; s <= emptyStars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star.svg";
+          star.src = "images/search_Img/star.svg";
           starView.appendChild(star);
         }
 
@@ -307,7 +307,7 @@ function searchBook(cate) {
         for (var s = 1; s <= details[x].stars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star-fill.svg";
+          star.src = "images/search_Img/star-fill.svg";
           starView.appendChild(star);
         }
 
@@ -316,7 +316,7 @@ function searchBook(cate) {
         for (var s = 1; s <= emptyStars; s++) {
           var star = document.createElement("img");
           star.classList.add("star");
-          star.src = "search_Img/star.svg";
+          star.src = "images/search_Img/star.svg";
           starView.appendChild(star);
         }
 
@@ -353,7 +353,7 @@ function searchBook(cate) {
 
     var noImg = document.createElement("img");
     noImg.classList.add("noResaultImg");
-    noImg.src = "search_Img/book.svg";
+    noImg.src = "images/search_Img/book.svg";
     noItemView.appendChild(noImg);
 
     var NoText = document.createElement("h1");
