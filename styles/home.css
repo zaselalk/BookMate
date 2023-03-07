@@ -1,0 +1,52 @@
+/* NAVGATION STYLES */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ece8e8;
+  padding: 10px 0px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 14px;
+}
+
+nav div {
+  padding: 0px 5px;
+  display: flex;
+}
+
+/* FOOTER STYLES */
+footer {
+  background: #dee7fc;
+  padding: 5%;
+}
+
+.footer-contact div {
+  padding: 3px;
+}
+
+.footer-contact svg {
+  padding-right: 5px;
+}
+.footer-details {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* HOME PAGE HEADINF STYLES */
+
+.heading {
+  padding: 5%;
+}
+
+#headingDiscription {
+  height: 117px;
+  width: 1170px;
+  font-size: 25px;
+  text-align: center;
+}
