@@ -1,0 +1,12 @@
+nav{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    height: 113px;
+}
+#headingDiscription{
+    height: 117px;
+    width: 1170px;
+    font-size: 25px;
+    text-align: center;
+}
