@@ -1,3 +1,3 @@
-# BookMate
+# BookMate Project
 
 Resources - ICONS - https://heroicons.com/
