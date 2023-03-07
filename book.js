@@ -4,7 +4,7 @@ const books = {
         {
             "name":                 "Psychology & Money",
             "category":             "science",
-            "author":                "Morgan Housel",
+            "author":               "Morgan Housel",
             "discription":          "Our library management system is designed to provide easy access to books, magazines, journals,",
             "Samplediscription":    "Our library management system is designed to provide easy access to books, magazines, journals,            ",
             "img":                  "search_img/bookImages/psychology.png",
@@ -419,4 +419,10 @@ function searchBook(cate){
 
 
     }
+
+    window.scroll({
+        top: 700,
+        left: 100,
+        behavior: 'smooth'
+      });
 }
