@@ -26,3 +26,12 @@
   background: #1569f7;
   color: aliceblue;
 }
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.flex {
+  display: flex;
+}
