@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathematics Books</title>
+
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="styles/searchStyle.css" />
+  </head>
+  <body onload="loadBooks('math')">
+    <!-- header -->
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>CONTACT US</li>
+      </ul>
+      <div>
+        <div>
+          <a class="btn" href="/signin.html">LOGIN</a>
+        </div>
+        <div>
+          <a class="btn-fill" href="/">REGISTER</a>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+
+    <!-- cover image -->
+    <div class="mainbg">
+      <div class="darkBg">
+        <h1 class="mainTextheading">Mathematics</h1>
+
+        <div class="hidden">
+          <input type="text" class="searchInput" id="searchBookInput" />
+          <div class="SearchImgDiv">
+            <img
+              src="images/search_Img/search.svg"
+              class="searchicon"
+              onclick="searchBook('math')"
+            />
+          </div>
+        </div>
+
+        <div class="hidden">
+          <p class="mainTextPara">
+            Our library management system is designed to provide easy access to
+            books, magazines, journals, <br />
+            and other materials for our members. With our user-friendly
+            interface, <br />
+            you can search for available resources,
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- cover image -->
+
+    <!-- navigation -->
+    <div class="navigation">
+      <a href="searchAll.html"><div class="navSelect hidden">All</div></a>
+      <a href="science.html"
+        ><div class="navSelect navSelect2 hidden">Science</div></a
+      >
+      <a href="maths.html"
+        ><div class="navSelect activeNacSelect navSelect3 hidden">
+          Mathematics
+        </div></a
+      >
+      <a href="technology.html"
+        ><div class="navSelect navSelect4 hidden">Technology</div></a
+      >
+      <a href="index.html"
+        ><div class="navSelect navSelect5 hidden">Home</div></a
+      >
+    </div>
+    <!-- navigation -->
+
+    <div class="searchResaults hidden" id="searchResaults">
+      <!-- card -->
+      <div class="card hidden">
+        <div class="BookImgContainer">
+          <img
+            src="images/search_img/bookImages/psychology.png"
+            class="BookImg"
+          />
+        </div>
+        <div class="details">
+          <p class="BookTitle">Psychology & Money</p>
+          <p class="BookAuthor">Morgan Housel</p>
+
+          <div class="starView">
+            <img src="images/search_Img/star-fill.svg" class="star" />
+            <img src="images/search_Img/star-fill.svg" class="star" />
+            <img src="images/search_Img/star-fill.svg" class="star" />
+            <img src="images/search_Img/star-fill.svg" class="star" />
+            <img src="images/search_Img/star.svg" class="star" />
+          </div>
+
+          <span class="BookPara"
+            >Our library management system is designed to provide easy access to
+            books, magazines, journals,</span
+          ><br />
+
+          <div class="cardBtnView">
+            <a class="cardBtn cardBtn1">View</a>
+            <a
+              href="books/PsychologyOfmoney.pdf"
+              target="_blank"
+              class="cardBtn cardBtn2"
+              >Download</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div>Logo</div>
+      <section class="footer-details">
+        <div class="footer-contact">
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+              />
+            </svg>
+
+            (257) 563-7401
+          </div>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"
+              />
+            </svg>
+
+            <address>Cecilia ChapmanNulla St.Mankato Mississippi</address>
+          </div>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="/">Home Page</a></li>
+            <li><a href="/">About Page</a></li>
+            <li><a href="/">Contact Page</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <!-- footer -->
+
+    <script src="js/animationScript.js"></script>
+    <script src="js/book.js"></script>
+  </body>
+</html>

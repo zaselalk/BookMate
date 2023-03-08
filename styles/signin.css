@@ -4,11 +4,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.container{
-    border: 1px solid red;
-
-     
-    
+.container {
+  border: 1px solid red;
 }
 
 
@@ -25,11 +22,7 @@ body{
     width: 40%;
     margin-top: 5px;
 }
-.us{
-    margin-top: 10px;
-    font-family: sans-serif;
-    
+.us {
+  margin-top: 10px;
+  font-family: sans-serif;
 }
-
-
-
