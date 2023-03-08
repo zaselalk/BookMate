@@ -104,3 +104,10 @@
     position: relative;
     
 }
+.branch{
+  background-color: gray;
+}
+.branchesContent{
+  display: grid;
+  grid-column: 1fr 1fr 1fr;
+}
