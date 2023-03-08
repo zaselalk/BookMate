@@ -1,0 +1,46 @@
+.em_b{
+    border-radius: 5px;
+    width: 40%;
+    height: 25px;
+    margin-top: 5px;
+}
+.pa_b{
+    border-radius: 5px;
+    width: 40%;
+    height: 25px;
+    margin-top: 5px;
+}
+.re_b{
+    border-radius: 5px;
+    width: 40%;
+    height: 25px;
+    margin-top: 5px;
+}
+.ag_b{
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 120%;
+    height: 25px;
+     
+}
+.ge_b{
+    border-radius: 5px;
+    margin-top: 5px;
+    width:100%;
+    height: 28px;
+    margin-left: 35px; 
+}
+.but_f{
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 28px; 
+}
+.but_d{
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 28px; 
+}
+.aj{
+    padding-left: 35px;
+     
+}
