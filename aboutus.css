@@ -29,3 +29,18 @@
     font-size: 25px;
 
 }
+#Wh_we{
+    font-weight: bold ;
+    font-size: 25px;
+
+
+}
+.wh_we_img{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    border-radius: 5%;
+    height:300px;
+    width:600px;
+    position: relative;
+}
