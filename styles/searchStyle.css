@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "FjallaOne";
+  src: url("fonts/FjallaOne.ttf");
+}
+
+@font-face {
+  font-family: "exo";
+  src: url("fonts/exo.ttf");
+}
+
+.mainbg {
+  width: 100%;
+  height: 550px;
+  background-image: url("images/search_Img/mainBg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.darkBg {
+  width: 100%;
+  height: 550px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 700px;
+  padding: 10px;
+  font-size: 20px;
+  padding-left: 30px;
+  color: white;
+  height: 30px;
+  border: 4px solid white;
+  background: transparent;
+  border-radius: 30px;
+  text-align: center;
+  padding-right: 70px;
+}
+
+.searchicon {
+  width: 30px;
+}
+
+.SearchImgDiv {
+  position: absolute;
+
+  margin-top: -54px;
+  width: 60px;
+  height: 50px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 744px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 400ms;
+}
+
+.SearchImgDiv:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.search-btn {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+  width: 120px;
+  color: black;
+  font-size: 15px;
+}
+
+.mainTextPara {
+  color: white;
+  line-height: 25px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mainTextheading {
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.navigation {
+  width: 100%;
+  height: 70px;
+  background-color: #343435;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.activeNacSelect {
+  background-color: #1569f7;
+}
+
+.navSelect {
+  padding-inline: 40px;
+  height: 70px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navSelect:hover {
+  background-color: #0b45aa;
+}
+
+.navSelect2 {
+  transition-delay: 100ms;
+}
+
+.navSelect3 {
+  transition-delay: 200ms;
+}
+
+.navSelect4 {
+  transition-delay: 300ms;
+}
+
+.navSelect5 {
+  transition-delay: 400ms;
+}
+
+.searchResaults {
+  margin-left: 5%;
+  padding-bottom: 50px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 40%;
+  padding: 15px;
+  float: left;
+  margin-top: 50px;
+  margin-right: 7%;
+  box-shadow: 0 5px 15px rgba(65, 64, 64, 0.5);
+  border-radius: 15px;
+  background-color: #e7f4fc;
+  display: flex;
+  flex-direction: row;
+}
+
+.BookImgContainer {
+  width: 30%;
+  float: left;
+}
+
+.BookImg {
+  width: 150px;
+  height: 200px;
+}
+
+.details {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.BookTitle {
+  font-size: 30px;
+  font-family: FjallaOne;
+}
+
+.BookAuthor {
+  font-size: 20px;
+  font-family: exo;
+}
+
+.starView {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.BookPara {
+  font-size: 13px;
+  color: rgb(100, 98, 98);
+}
+
+.cardBtnView {
+  margin-top: 30px;
+}
+
+.cardBtn {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.cardBtn1 {
+  background-color: #1569f7;
+  padding-inline: 60px;
+}
+
+.cardBtn2 {
+  background-color: #29a8ef;
+  padding-inline: 40px;
+  margin-left: 5px;
+}
+
+.NoresaultText {
+  margin-top: 50px;
+  width: 95%;
+  text-align: center;
+  color: #7a7b7c;
+}
+
+.noResaultImg {
+  width: 80px;
+}
