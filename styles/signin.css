@@ -1,6 +1,6 @@
 
 body{
-    background-image:url();
+    background-image:url("pop.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -14,13 +14,13 @@ body{
 
 
 .f_name{
-    border-radius: 5px;
+    border-radius: 4px;
     border-color: rgb(231, 231, 236);
     width: 40%;
     margin-top: 5px;
 }
 .f_pwd{
-    border-radius: 5px;
+    border-radius: 4px;
     border-color: rgb(231, 231, 236);
     width: 40%;
     margin-top: 5px;
