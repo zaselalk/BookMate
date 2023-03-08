@@ -1,7 +1,7 @@
 const books = [
   {
     id: "a2b61947-a644-4cb4-9698-13bb2e978d8a",
-    title: "Frankenstein; Or, The Modern Prometheus",
+    title: "The Modern Prometheus",
     image: "https://www.gutenberg.org/cache/epub/84/pg84.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
     category: "science",
@@ -12,7 +12,7 @@ const books = [
   },
   {
     id: "1774a0dd-effd-45f6-9e37-77954b9dadf4",
-    title: "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    title: "The Strange Case",
     image: "https://www.gutenberg.org/cache/epub/43/pg43.cover.medium.jpg",
     author: "Stevenson, Robert Louis",
     category: "science",
@@ -89,7 +89,7 @@ const books = [
   },
   {
     id: "d9ef16c4-2373-4567-b269-b8b0920b9dd0",
-    title: "Frankenstein; Or, The Modern Prometheus",
+    title: "The Modern Prometheus",
     image:
       "https://www.gutenberg.org/cache/epub/42324/pg42324.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
@@ -123,7 +123,7 @@ const books = [
   },
   {
     id: "dfe632db-ee28-415e-9de1-ee53555f9019",
-    title: "Frankenstein; Or, The Modern Prometheus",
+    title: "The Modern Prometheus",
     image:
       "https://www.gutenberg.org/cache/epub/41445/pg41445.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
@@ -157,7 +157,7 @@ const books = [
   },
   {
     id: "93a42a2f-698b-444c-8a67-f025a67a197c",
-    title: "The Invisible Man: A Grotesque Romance",
+    title: "The Invisible Man",
     image: "https://www.gutenberg.org/cache/epub/5230/pg5230.cover.medium.jpg",
     author: "Wells, H. G. (Herbert George)",
     category: "science",
@@ -191,7 +191,7 @@ const books = [
   },
   {
     id: "486bf4c6-a95b-4f7f-a140-83bcb4d6e8da",
-    title: "The island of Doctor Moreau",
+    title: "The island ",
     image: "https://www.gutenberg.org/cache/epub/159/pg159.cover.medium.jpg",
     author: "Wells, H. G. (Herbert George)",
     category: "science",
@@ -226,7 +226,7 @@ const books = [
   },
   {
     id: "8661d039-41f0-4359-a5cc-cc09f8fd8010",
-    title: "A Connecticut Yankee in King Arthur's Court",
+    title: "A Connecticut Yankee ",
     image: "https://www.gutenberg.org/cache/epub/86/pg86.cover.medium.jpg",
     author: "Twain, Mark",
     category: "science",
@@ -273,7 +273,7 @@ const books = [
   },
   {
     id: "7b3c898c-f1bc-4b51-9301-ed9e05958c35",
-    title: "A Journey to the Centre of the Earth",
+    title: "To the Centre of the Earth",
     image:
       "https://www.gutenberg.org/cache/epub/18857/pg18857.cover.medium.jpg",
     author: "Verne, Jules",
@@ -286,7 +286,7 @@ const books = [
   {
     id: "eeed560e-7f00-4b28-8e5c-03b4efcda226",
     title:
-      "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
+      "Discourse on the Method",
     image: "https://www.gutenberg.org/cache/epub/59/pg59.cover.medium.jpg",
     author: "Descartes, Ren\u00e9",
     category: "science",
@@ -344,7 +344,7 @@ const books = [
   },
   {
     id: "f9d7b174-1872-4603-bcbe-f8d06478b268",
-    title: "Flatland: A Romance of Many Dimensions",
+    title: "A Romance of Many Dimensions",
     image: "https://www.gutenberg.org/cache/epub/201/pg201.cover.medium.jpg",
     author: "Abbott, Edwin Abbott",
     category: "science",
@@ -355,7 +355,7 @@ const books = [
   },
   {
     id: "c09fbfbe-631c-4726-854d-4bdff7160954",
-    title: "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    title: "The Strange Case ",
     image: "https://www.gutenberg.org/cache/epub/42/pg42.cover.medium.jpg",
     author: "Stevenson, Robert Louis",
     category: "science",
@@ -3638,7 +3638,7 @@ function loadBooks(cate) {
         BookImgContainer.appendChild(bookImage);
 
         var name = document.createElement("p");
-        name.textContent = details[x].name;
+        name.textContent = details[x].title;
         name.classList.add("BookTitle");
         detailView.appendChild(name);
 
@@ -3684,7 +3684,7 @@ function loadBooks(cate) {
 
         var btn2 = document.createElement("a");
         btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].name + ".pdf");
+        btn2.setAttribute("download", details[x].title + ".pdf");
         btn2.setAttribute("href", details[x].filePath);
         btn2.setAttribute("target", "_blank");
         btn2.classList.add("cardBtn", "cardBtn2");
@@ -3709,7 +3709,7 @@ function loadBooks(cate) {
       BookImgContainer.appendChild(bookImage);
 
       var name = document.createElement("p");
-      name.textContent = details[x].name;
+      name.textContent = details[x].title;
       name.classList.add("BookTitle");
       detailView.appendChild(name);
 
@@ -3755,7 +3755,7 @@ function loadBooks(cate) {
 
       var btn2 = document.createElement("a");
       btn2.textContent = "Download";
-      btn2.setAttribute("download", details[x].name + ".pdf");
+      btn2.setAttribute("download", details[x].title + ".pdf");
       btn2.setAttribute("href", details[x].filePath);
       btn2.setAttribute("target", "_blank");
       btn2.classList.add("cardBtn", "cardBtn2");
@@ -3797,7 +3797,7 @@ function searchBook(cate) {
         BookImgContainer.appendChild(bookImage);
 
         var name = document.createElement("p");
-        name.textContent = details[x].name;
+        name.textContent = details[x].title;
         name.classList.add("BookTitle");
         detailView.appendChild(name);
 
@@ -3843,7 +3843,7 @@ function searchBook(cate) {
 
         var btn2 = document.createElement("a");
         btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].name + ".pdf");
+        btn2.setAttribute("download", details[x].title + ".pdf");
         btn2.setAttribute("href", details[x].filePath);
         btn2.setAttribute("target", "_blank");
         btn2.classList.add("cardBtn", "cardBtn2");
@@ -3871,7 +3871,7 @@ function searchBook(cate) {
         BookImgContainer.appendChild(bookImage);
 
         var name = document.createElement("p");
-        name.textContent = details[x].name;
+        name.textContent = details[x].title;
         name.classList.add("BookTitle");
         detailView.appendChild(name);
 
@@ -3917,7 +3917,7 @@ function searchBook(cate) {
 
         var btn2 = document.createElement("a");
         btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].name + ".pdf");
+        btn2.setAttribute("download", details[x].title + ".pdf");
         btn2.setAttribute("href", details[x].filePath);
         btn2.setAttribute("target", "_blank");
         btn2.classList.add("cardBtn", "cardBtn2");
