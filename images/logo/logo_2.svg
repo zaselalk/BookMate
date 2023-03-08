@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 696.3 221.54">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #1684c2;
+      }
+
+      .cls-4 {
+        fill: #3eb8ea;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #193f76;
+      }
+
+      .cls-6 {
+        font-size: 29.08px;
+        letter-spacing: .2em;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-7 {
+        font-size: 124.18px;
+      }
+    </style>
+  </defs>
+  <text class="cls-7" transform="translate(255.26 129.08) scale(.58 1)"><tspan class="cls-5" x="0" y="0">BOOK </tspan><tspan class="cls-2" x="407.05" y="0">M</tspan><tspan class="cls-3" x="510.49" y="0">A</tspan><tspan class="cls-1" x="590.96" y="0">TE</tspan></text>
+  <text/>
+  <g>
+    <path class="cls-4" d="m224.38,2.85v149.31l-28.44,15.64.71-113.76-55.64,31.28h0c-8.77-5.42-17.56-10.84-26.34-16.26h0S224.38,2.85,224.38,2.85Z"/>
+    <path class="cls-5" d="m179.58,135.09l-25.6,13.53,25.6,17.05v14.22l-63.99,38.39L3.26,152.16v-.71l28.44-15.64,79.72,48.34,21.25-12.79-83.9-51.19v-31.29l76.79,44.8,19.91-12.8L31.69,54.04V17.73l20.62,12.85c9.96,6.15,19.92,12.29,29.88,18.45,10.82,6.68,21.64,13.36,32.47,20.04,8.78,5.42,17.56,10.83,26.34,16.26h0c12.86,7.94,25.72,15.88,38.58,23.82v25.95Z"/>
+    <g>
+      <path class="cls-5" d="m116.38,221.54l-97.18-55.46L0,178.17s25.86-4.27,116.38,43.37Z"/>
+      <path class="cls-1" d="m13.66,182.43s43.53,7.82,100.33,39.11c0,0-86.11-33.42-108.15-27.73l7.82-11.38Z"/>
+    </g>
+    <g>
+      <path class="cls-5" d="m114.66,221.54l97.18-55.46,19.2,12.09s-25.86-4.27-116.38,43.37Z"/>
+      <path class="cls-1" d="m217.38,182.43s-43.53,7.82-100.33,39.11c0,0,86.11-33.42,108.15-27.73l-7.82-11.38Z"/>
+    </g>
+    <polygon class="cls-4" points="31.69 17.73 31.69 135.81 3.26 151.44 3.26 0 31.69 17.73"/>
+  </g>
+  <text class="cls-6" transform="translate(260.56 167.56) scale(.83 1)"><tspan x="0" y="0">Digital Reading Companion</tspan></text>
+</svg>
