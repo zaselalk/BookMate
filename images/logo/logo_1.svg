@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_3" data-name="Layer 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270.83 344.44">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #1684c2;
+      }
+
+      .cls-3 {
+        fill: #3eb8ea;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #193f76;
+      }
+
+      .cls-6 {
+        font-size: 45.65px;
+      }
+
+      .cls-6, .cls-5 {
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-5 {
+        font-size: 15px;
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(2.24 312.57) scale(.96 1)"><tspan class="cls-4" x="0" y="0">BOOK </tspan><tspan class="cls-1" x="149.63" y="0">M</tspan><tspan class="cls-2" x="187.66" y="0">A</tspan><tspan class="cls-1" x="217.24" y="0">TE</tspan></text>
+  <text class="cls-5" transform="translate(0 338.79)"><tspan x="0" y="0">Digital Reading Companion</tspan></text>
+  <g>
+    <path class="cls-3" d="m260.96,3.31v173.42l-33.03,18.17.82-132.13-64.63,36.33h-.01c-10.19-6.3-20.39-12.59-30.59-18.88h0S260.96,3.31,260.96,3.31Z"/>
+    <path class="cls-4" d="m208.93,156.91l-29.73,15.71,29.73,19.8v16.52l-74.32,44.59L4.13,176.73v-.83l33.03-18.16,92.59,56.15,24.68-14.86-97.45-59.46v-36.34l89.19,52.03,23.12-14.87L37.16,62.77V20.59l23.95,14.92c11.57,7.14,23.14,14.28,34.7,21.43,12.57,7.76,25.14,15.52,37.71,23.28,10.2,6.29,20.4,12.58,30.59,18.88h.01c14.94,9.22,29.87,18.45,44.81,27.67v30.14Z"/>
+    <g>
+      <path class="cls-4" d="m135.52,257.31L22.65,192.9.35,206.94s30.04-4.95,135.18,50.38Z"/>
+      <path class="cls-1" d="m16.21,211.89s50.56,9.08,116.53,45.42c0,0-100.02-38.81-125.62-32.21l9.08-13.21Z"/>
+    </g>
+    <g>
+      <path class="cls-4" d="m133.52,257.31l112.88-64.41,22.3,14.04s-30.04-4.95-135.18,50.38Z"/>
+      <path class="cls-1" d="m252.84,211.89s-50.56,9.08-116.53,45.42c0,0,100.02-38.81,125.62-32.21l-9.08-13.21Z"/>
+    </g>
+    <polygon class="cls-3" points="37.16 20.59 37.16 157.74 4.13 175.9 4.13 0 37.16 20.59"/>
+  </g>
+</svg>
