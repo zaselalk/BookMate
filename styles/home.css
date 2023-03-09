@@ -1,4 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter-Regular.otf');
+}
 /* heading  */
+*{
+  font-family: Inter;
+}
+.mainNav a{
+  text-decoration: none;
+}
 .heading {
   background-image: url("../images/home/headingImg.jpg");
   background-size: 100vw 100vh;
@@ -25,6 +35,7 @@
   line-height: 25px;
   width: 95%;
   bottom: 150px;
+  font-family: Inter;
 }
 #title {
   position: absolute;
@@ -32,13 +43,15 @@
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
+  font-family: Inter;
 }
 #tagLine {
   position: absolute;
   top: 35%;
   text-align: center;
-  font-size: 25pt;
+  font-size: 20pt;
+  font-family: Inter;
 }
 .fa {
   font-size: 30px;
@@ -60,6 +73,7 @@
   position: absolute;
   bottom: 50px;
   left: 45%;
+  font-family: Inter;
 }
 /* bottom navigation  */
 .navigation {
@@ -69,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Inter;
 }
 .navigation a {
   color: white;
@@ -132,7 +147,7 @@
 }
 #servicesTitle {
   padding-left: 50px;
-  font-size: 40pt;
+  font-size: 35pt;
 }
 .service:hover {
   transition: 400ms;
@@ -163,7 +178,7 @@
 }
 .aboutTitle{
   padding-left: 7%;
-  font-size: 40pt;
+  font-size: 35pt;
 }
 .aboutDescription{
   padding-top: 20px;
@@ -182,13 +197,13 @@
   background-color: #0b45aa;
 }
 /* contact us  */
-.contactUs{
+#contactUs{
   padding-top: 5%;
   line-height: 100px;
 }
 .contactTitle{
   padding-left: 7%;
-  font-size: 40pt;
+  font-size: 35pt;
 }
 .contactUsContent{
   line-height: normal;

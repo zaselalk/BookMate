@@ -15,37 +15,20 @@
     />
     <title>Home Page</title>
   </head>
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./styles/home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Home Page</title>
-  </head>
-
   <body>
-    <nav>
+    <nav class="mainNav">
       <ul>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
+        <a href="index.html"><li>HOME</li></a>
+        <a href="aboutus.html"><li>ABOUT US</li></a>
+        <a href="#contactUs"><li>CONTACT US</li></a>
       </ul>
       <div>
         <div>
           <div>
-            <a class="btn" href="/signin.html">LOGIN</a>
+            <a class="btn" href="/login.html">LOGIN</a>
           </div>
           <div>
-            <a class="btn-fill" href="/">REGISTER</a>
+            <a class="btn-fill" href="/Register.html">REGISTER</a>
           </div>
         </div>
       </div>
@@ -67,7 +50,7 @@
         <div class="searchbtn hidden">
         <button
           class="search-button"
-          onclick="window.location.href='maths.html'"
+          onclick="window.location.href='search.html'"
         >
           <i class="fa fa-search"></i>SEARCH
         </button>
@@ -77,16 +60,16 @@
     <!-- header  -->
     <!-- bottom navigation  -->
     <div class="navigation">
-      <a href="/">
+      <a href="index.html">
         <div class="navSelect activeNavSelect">HOME</div>
       </a>
-      <a href="/">
+      <a href="technology.html">
         <div class="navSelect navSelect2 hidden">TECH</div>
       </a>
-      <a href="/">
+      <a href="science.html">
         <div class="navSelect navSelect3 hidden">SCIENCE</div>
       </a>
-      <a href="/">
+      <a href="maths.html">
         <div class="navSelect navSelect4 hidden">MATHEMATICS</div>
       </a>
       <a href="/">
@@ -145,7 +128,7 @@
     </div>
     <!-- about us  -->
     <!-- Contact us  -->
-    <div class="contactUs">
+    <div id="contactUs">
       <h1 class="contactTitle">Contact us</h1>
       <div class="contactUsContent">
         <form>
