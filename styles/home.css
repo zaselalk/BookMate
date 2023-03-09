@@ -55,6 +55,7 @@
   position: absolute;
   bottom: 50px;
   left: 45%;
+  text-decoration: none;
 }
 /* bottom navigation  */
 .navigation {
