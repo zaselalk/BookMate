@@ -43,6 +43,11 @@
 .fa {
   font-size: 30px;
 }
+.searchbtn{
+  position: absolute;
+  bottom: 0;
+  left: 44%;
+}
 .search-button {
   cursor: pointer;
   font-size: 17pt;
