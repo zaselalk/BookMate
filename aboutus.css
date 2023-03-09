@@ -122,9 +122,19 @@
     font-size: 25px;
     text-align: center;
 }
+/*Branches*/
 .branches{
    float:left;
    border:60px; 
 }
-
-  
+.branchesContent{
+  display:inline-block;
+  grid-column: 1fr 1fr 1fr;
+}
+.branch{
+  float: left; 
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 50px;
+}
