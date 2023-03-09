@@ -35,17 +35,23 @@
   <body>
     <nav>
       <ul>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT US</a>
+        </li>
       </ul>
       <div>
         <div>
           <div>
-            <a class="btn" href="/signin.html">LOGIN</a>
+            <a class="btn" href="/login.html">LOGIN</a>
           </div>
           <div>
-            <a class="btn-fill" href="/">REGISTER</a>
+            <a class="btn-fill" href="/register.html">REGISTER</a>
           </div>
         </div>
       </div>
@@ -73,16 +79,16 @@
       <a href="/">
         <div class="navSelect activeNavSelect">HOME</div>
       </a>
-      <a href="/">
+      <a href="/tech.html">
         <div class="navSelect navSelect2">TECH</div>
       </a>
-      <a href="/">
+      <a href="/science.html">
         <div class="navSelect navSelect3">SCIENCE</div>
       </a>
-      <a href="/">
+      <a href="/maths.html">
         <div class="navSelect navSelect4">MATHEMATICS</div>
       </a>
-      <a href="/">
+      <a href="/search.html">
         <div class="navSelect navSelect5">ALL</div>
       </a>
     </div>
@@ -128,12 +134,16 @@
     <div class="aboutUs">
       <h1 class="aboutTitle">How are we?</h1>
       <div class="aboutUsContent">
-        <img class="aboutImage" src="./images/about/lady-with-book.jpg">
-        <p class="aboutDescription">Our library management system is designed to provide easy<br/>
-          access to books, magazines, journals, and other materials for our<br>
-          members. With our user-friendly interface, you can search for<br>
-          available resources,</p>
-        <button class="aboutbtn" onclick="window.location.href='aboutus.html'">ABOUT US</button>
+        <img class="aboutImage" src="./images/about/lady-with-book.jpg" />
+        <p class="aboutDescription">
+          Our library management system is designed to provide easy<br />
+          access to books, magazines, journals, and other materials for our<br />
+          members. With our user-friendly interface, you can search for<br />
+          available resources,
+        </p>
+        <button class="aboutbtn" onclick="window.location.href='aboutus.html'">
+          ABOUT US
+        </button>
       </div>
     </div>
     <!-- about us  -->
@@ -142,11 +152,31 @@
       <h1 class="contactTitle">Contact us</h1>
       <div class="contactUsContent">
         <form>
-          <input type="text" placeholder="Email Address" name="email" class="contact contactemail"><br>
-          <input type="text" placeholder="First Name" name="fname" class="contact contactfname">
-          <input type="text" placeholder="Last Name" name="lname" class="contact contactlname"><br>
-          <textarea class="contact contactdescription"></textarea><br>
-          <input type="submit" name="submit" value="SEND MASSAGE" class="contactbtn">
+          <input
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            class="contact contactemail"
+          /><br />
+          <input
+            type="text"
+            placeholder="First Name"
+            name="fname"
+            class="contact contactfname"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lname"
+            class="contact contactlname"
+          /><br />
+          <textarea class="contact contactdescription"></textarea><br />
+          <input
+            type="submit"
+            name="submit"
+            value="SEND MASSAGE"
+            class="contactbtn"
+          />
         </form>
       </div>
     </div>
