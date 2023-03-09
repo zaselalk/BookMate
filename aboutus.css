@@ -128,7 +128,7 @@
    border:60px; 
 }
 .branchesContent{
-  display:inline-block;
+  display:grid;
   grid-column: 1fr 1fr 1fr;
 }
 .branch{
