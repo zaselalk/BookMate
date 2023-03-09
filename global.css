@@ -1,0 +1,127 @@
+/* Colors
+     - #1569F7  -- Primary blue
+     - #3F37C9  -- Secondary purpal
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+/* animation styles */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* Global utility classes */
+.btn {
+  text-decoration: none;
+  border: 1px solid #1569f7;
+  padding: 10px;
+  border-radius: 4px;
+  color: #1569f7;
+  width: 80px;
+  font-size: 14px;
+  text-align: center;
+  transition-duration: 400ms;
+}
+
+.btn:hover {
+  background-color: #1569f7;
+  color: white;
+  transition-duration: 400ms;
+}
+
+.btn-fill {
+  text-decoration: none;
+  border: 1px solid #1569f7;
+  padding: 10px;
+  border-radius: 4px;
+  background: #1569f7;
+  color: aliceblue;
+  width: 80px;
+  font-size: 14px;
+  text-align: center;
+  transition-duration: 400ms;
+}
+
+.btn-fill:hover {
+  transition-duration: 400ms;
+  background-color: #1150bd;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* NAVGATION STYLES */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ece8e8;
+  padding: 10px 0px;
+  padding-inline: 30px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 14px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li:hover {
+  color: #1569f7;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+nav div {
+  padding: 0px 5px;
+  display: flex;
+}
+
+/* FOOTER STYLES */
+footer {
+  margin-top: 100px;
+  width: 90%;
+  float: left;
+  background: #dee7fc;
+  padding: 5%;
+  margin-bottom: 0;
+}
+
+.footer-contact div {
+  padding: 3px;
+}
+
+.footer-contact svg {
+  padding-right: 5px;
+}
+.footer-details {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
