@@ -12,21 +12,29 @@
   <body>
     <nav>
       <ul>
-        <li>HOME</li>
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="index.html#contact">CONTACT US</a>
+        </li>
       </ul>
       <div>
         <div>
-          <a class="btn" href="/">LOGIN</a>
-        </div>
-        <div>
-          <a class="btn-fill" href="/">REGISTER</a>
+          <div>
+            <a class="btn" href="/login.html">LOGIN</a>
+          </div>
+          <div>
+            <a class="btn-fill" href="/register.html">REGISTER</a>
+          </div>
         </div>
       </div>
     </nav>
     <div class="container">
-      <img  class="logo_n" src="images/logo/logo1.png">
+      <img class="logo_n" src="images/logo/logo1.png" />
       <h2>User sign in</h2>
       <form action="#">
         <label class="us">Username</label><br />
@@ -36,21 +44,22 @@
         <label class="ps">Password</label> <br />
 
         <input class="f_pwd" type="password" name="pw" id="n_pwd" /><br />
-      <div class="dek">
-       <button class="btnn_f" > <a href="register.html"  class="dfe" >Register</a></button>
-       <button class="sizn_f" onclick="myfun()">Login</button>
-      </div>
-
+        <div class="dek">
+          <button class="btnn_f">
+            <a href="register.html" class="dfe">Register</a>
+          </button>
+          <button class="sizn_f" onclick="myfun()">Login</button>
+        </div>
       </form>
     </div>
 
-    
     <script src="./js/signin.js"></script>
     <h1>EDU BOOK</h1>
-    <p>Our library management system is desigened to<br> 
-       provide easy access to books,magazines,journals,<br>
-       frindly interface,you can search for available<br>
-       resources.
+    <p>
+      Our library management system is desigened to<br />
+      provide easy access to books,magazines,journals,<br />
+      frindly interface,you can search for available<br />
+      resources.
     </p>
   </body>
 </html>
