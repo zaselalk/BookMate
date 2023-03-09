@@ -108,18 +108,38 @@
   grid-column: 1fr 1fr 1fr;
 }
 .block {
-  float: left;
-  height: 150px;
-  width: 500px;
-  border: 20px;
+
+    float: left; 
+    height:150px;
+    width:500px;
+    border: 20px;
+  }
+.wh_we_1{
+    
+    float: left; 
+    height:150px;
+    width:500px;
+    border: 20px;
+   
 }
-.wh_we_1 {
-  float: left;
-  height: 150px;
-  width: 500px;
-  border: 20px;
+#wh_we_1_para{
+    font-size: 25px;
+    text-align: center;
 }
-#wh_we_1_para {
-  font-size: 25px;
-  text-align: center;
+/*Branches*/
+.branches{
+   float:left;
+   border:60px; 
+}
+.branchesContent{
+  display:inline-block;
+  grid-column: 1fr 1fr 1fr;
+}
+.branch{
+  float: left; 
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 50px;
+
 }
