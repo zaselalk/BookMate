@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="index.html#contact">CONTACT US</a>
+        </li>
+      </ul>
+      <div>
+        <div>
+          <div>
+            <a class="btn" href="/login.html">LOGIN</a>
+          </div>
+          <div>
+            <a class="btn-fill" href="/register.html">REGISTER</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="cont">
+      <img class="logo_r" src="images/logo/logo1.png" />
+      <h2>Create New Account</h2>
+      <form action="#">
+        <label class="ema">Emali</label><br />
+        <input class="em_b" type="text" id="ema" c /> <br />
+
+        <label class="pw">Password</label><br />
+        <input class="pa_b" type="password" id="pwd2" /><br />
+
+        <label class="re">Re-enter password</label><br />
+        <input class="re_b" type="password" id="re_pwd" /><br />
+
+        <table class="tab_s">
+          <tr>
+            <td>Age</td>
+            <td class="aj">Gender</td>
+          </tr>
+          <tr>
+            <td><input class="ag_b" type="text" id="n_age" /></td>
+            <td>
+              <select class="ge_b">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div class="fix_t">
+          <input
+            class="btnnf"
+            type="submit"
+            id="sub_n1"
+            value="sign Up"
+            onclick="register_f()"
+          />
+          <input
+            class="siz_f"
+            type="submit"
+            id="sub_n2"
+            value="Have an Account"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="./js/Register.js"></script>
+    <h1>EDU BOOK</h1>
+    <p>
+      Our library management system is desigened to<br />
+      provide easy access to books,magazines,journals,<br />
+      frindly interface,you can search for available<br />
+      resources.
+    </p>
+  </body>
+</html>
