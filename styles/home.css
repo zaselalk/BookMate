@@ -74,6 +74,8 @@
   bottom: 50px;
   left: 45%;
   font-family: Inter;
+  text-decoration: none;
+
 }
 /* bottom navigation  */
 .navigation {

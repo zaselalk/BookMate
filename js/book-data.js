@@ -1,7 +1,7 @@
-const books = [
+[
   {
     id: "a2b61947-a644-4cb4-9698-13bb2e978d8a",
-    title: "The Modern Prometheus",
+    title: "Frankenstein; Or, The Modern Prometheus",
     image: "https://www.gutenberg.org/cache/epub/84/pg84.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
     category: "science",
@@ -12,7 +12,7 @@ const books = [
   },
   {
     id: "1774a0dd-effd-45f6-9e37-77954b9dadf4",
-    title: "The Strange Case",
+    title: "The Strange Case of Dr. Jekyll and Mr. Hyde",
     image: "https://www.gutenberg.org/cache/epub/43/pg43.cover.medium.jpg",
     author: "Stevenson, Robert Louis",
     category: "science",
@@ -89,7 +89,7 @@ const books = [
   },
   {
     id: "d9ef16c4-2373-4567-b269-b8b0920b9dd0",
-    title: "The Modern Prometheus",
+    title: "Frankenstein; Or, The Modern Prometheus",
     image:
       "https://www.gutenberg.org/cache/epub/42324/pg42324.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
@@ -123,7 +123,7 @@ const books = [
   },
   {
     id: "dfe632db-ee28-415e-9de1-ee53555f9019",
-    title: "The Modern Prometheus",
+    title: "Frankenstein; Or, The Modern Prometheus",
     image:
       "https://www.gutenberg.org/cache/epub/41445/pg41445.cover.medium.jpg",
     author: "Shelley, Mary Wollstonecraft",
@@ -157,7 +157,7 @@ const books = [
   },
   {
     id: "93a42a2f-698b-444c-8a67-f025a67a197c",
-    title: "The Invisible Man",
+    title: "The Invisible Man: A Grotesque Romance",
     image: "https://www.gutenberg.org/cache/epub/5230/pg5230.cover.medium.jpg",
     author: "Wells, H. G. (Herbert George)",
     category: "science",
@@ -191,7 +191,7 @@ const books = [
   },
   {
     id: "486bf4c6-a95b-4f7f-a140-83bcb4d6e8da",
-    title: "The island ",
+    title: "The island of Doctor Moreau",
     image: "https://www.gutenberg.org/cache/epub/159/pg159.cover.medium.jpg",
     author: "Wells, H. G. (Herbert George)",
     category: "science",
@@ -226,7 +226,7 @@ const books = [
   },
   {
     id: "8661d039-41f0-4359-a5cc-cc09f8fd8010",
-    title: "A Connecticut Yankee ",
+    title: "A Connecticut Yankee in King Arthur's Court",
     image: "https://www.gutenberg.org/cache/epub/86/pg86.cover.medium.jpg",
     author: "Twain, Mark",
     category: "science",
@@ -273,7 +273,7 @@ const books = [
   },
   {
     id: "7b3c898c-f1bc-4b51-9301-ed9e05958c35",
-    title: "To the Centre of the Earth",
+    title: "A Journey to the Centre of the Earth",
     image:
       "https://www.gutenberg.org/cache/epub/18857/pg18857.cover.medium.jpg",
     author: "Verne, Jules",
@@ -286,7 +286,7 @@ const books = [
   {
     id: "eeed560e-7f00-4b28-8e5c-03b4efcda226",
     title:
-      "Discourse on the Method",
+      "Discourse on the Method of Rightly Conducting One's Reason and of Seeking Truth in the Sciences",
     image: "https://www.gutenberg.org/cache/epub/59/pg59.cover.medium.jpg",
     author: "Descartes, Ren\u00e9",
     category: "science",
@@ -344,7 +344,7 @@ const books = [
   },
   {
     id: "f9d7b174-1872-4603-bcbe-f8d06478b268",
-    title: "A Romance of Many Dimensions",
+    title: "Flatland: A Romance of Many Dimensions",
     image: "https://www.gutenberg.org/cache/epub/201/pg201.cover.medium.jpg",
     author: "Abbott, Edwin Abbott",
     category: "science",
@@ -355,7 +355,7 @@ const books = [
   },
   {
     id: "c09fbfbe-631c-4726-854d-4bdff7160954",
-    title: "The Strange Case ",
+    title: "The Strange Case of Dr. Jekyll and Mr. Hyde",
     image: "https://www.gutenberg.org/cache/epub/42/pg42.cover.medium.jpg",
     author: "Stevenson, Robert Louis",
     category: "science",
@@ -3609,341 +3609,3 @@ const books = [
       "This unputdownable book will keep you.This unputdownable narrative will captivate you.This fascinating story will leave you.This unputdownable narrative will take you.This unputdownable story will captivate you.This captivating fiction will take you.This compelling novel will keep you.This mesmerizing story will leave a lasting impression on you.This spellbinding story will leave a lasting impression on you.This mesmerizing fiction will mesmerize you.This gripping book will captivate you.This fascinating story will leave a lasting impression on you.This fascinating tale will captivate you.This captivating work will leave you.This thought-provoking novel will captivate you.This entertaining tale will mesmerize you.This entertaining narrative will leave you.This spellbinding story will take you.This unputdownable tale will take you.This thought-provoking prose will mesmerize you.",
   },
 ];
-
-function loadBooks(cate) {
-  var len = books.length;
-  let details = books;
-  var dispay = document.getElementById("searchResaults");
-
-  dispay.innerHTML = "";
-
-  for (var x = 0; x < len; x++) {
-    if (cate != "all") {
-      if (details[x].category == cate) {
-        var card = document.createElement("div");
-        card.classList.add("card");
-        dispay.appendChild(card);
-
-        var BookImgContainer = document.createElement("div");
-        BookImgContainer.classList.add("BookImgContainer");
-        card.appendChild(BookImgContainer);
-
-        var detailView = document.createElement("div");
-        detailView.classList.add("details");
-        card.appendChild(detailView);
-
-        var bookImage = document.createElement("img");
-        bookImage.classList.add("BookImg");
-        bookImage.src = details[x].image;
-        BookImgContainer.appendChild(bookImage);
-
-        var name = document.createElement("p");
-        name.textContent = details[x].title;
-        name.classList.add("BookTitle");
-        detailView.appendChild(name);
-
-        var author = document.createElement("p");
-        author.textContent = details[x].author;
-        author.classList.add("BookAuthor");
-        detailView.appendChild(author);
-
-        var starView = document.createElement("div");
-        starView.classList.add("starView");
-        detailView.appendChild(starView);
-
-        for (var s = 1; s <= details[x].stars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star-fill.svg";
-          starView.appendChild(star);
-        }
-
-        let emptyStars = 5 - details[x].stars;
-
-        for (var s = 1; s <= emptyStars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star.svg";
-          starView.appendChild(star);
-        }
-
-        var sample = document.createElement("p");
-        sample.textContent = details[x].sample;
-        sample.classList.add("BookPara");
-        detailView.appendChild(sample);
-
-        var cardBtnView = document.createElement("div");
-        cardBtnView.classList.add("cardBtnView");
-        detailView.appendChild(cardBtnView);
-
-        var btn1 = document.createElement("a");
-        btn1.textContent = "View";
-        btn1.setAttribute("href", details[x].pagePath);
-        btn1.classList.add("cardBtn", "cardBtn1");
-        cardBtnView.appendChild(btn1);
-
-        var btn2 = document.createElement("a");
-        btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].title + ".pdf");
-        btn2.setAttribute("href", details[x].filePath);
-        btn2.setAttribute("target", "_blank");
-        btn2.classList.add("cardBtn", "cardBtn2");
-        cardBtnView.appendChild(btn2);
-      }
-    } else {
-      var card = document.createElement("div");
-      card.classList.add("card");
-      dispay.appendChild(card);
-
-      var BookImgContainer = document.createElement("div");
-      BookImgContainer.classList.add("BookImgContainer");
-      card.appendChild(BookImgContainer);
-
-      var detailView = document.createElement("div");
-      detailView.classList.add("details");
-      card.appendChild(detailView);
-
-      var bookImage = document.createElement("img");
-      bookImage.classList.add("BookImg");
-      bookImage.src = details[x].image;
-      BookImgContainer.appendChild(bookImage);
-
-      var name = document.createElement("p");
-      name.textContent = details[x].title;
-      name.classList.add("BookTitle");
-      detailView.appendChild(name);
-
-      var author = document.createElement("p");
-      author.textContent = details[x].author;
-      author.classList.add("BookAuthor");
-      detailView.appendChild(author);
-
-      var starView = document.createElement("div");
-      starView.classList.add("starView");
-      detailView.appendChild(starView);
-
-      for (var s = 1; s <= details[x].stars; s++) {
-        var star = document.createElement("img");
-        star.classList.add("star");
-        star.src = "images/search_Img/star-fill.svg";
-        starView.appendChild(star);
-      }
-
-      let emptyStars = 5 - details[x].stars;
-
-      for (var s = 1; s <= emptyStars; s++) {
-        var star = document.createElement("img");
-        star.classList.add("star");
-        star.src = "images/search_Img/star.svg";
-        starView.appendChild(star);
-      }
-
-      var sample = document.createElement("p");
-      sample.textContent = details[x].sample;
-      sample.classList.add("BookPara");
-      detailView.appendChild(sample);
-
-      var cardBtnView = document.createElement("div");
-      cardBtnView.classList.add("cardBtnView");
-      detailView.appendChild(cardBtnView);
-
-      var btn1 = document.createElement("a");
-      btn1.textContent = "View";
-      btn1.setAttribute("href", details[x].pagePath);
-      btn1.classList.add("cardBtn", "cardBtn1");
-      cardBtnView.appendChild(btn1);
-
-      var btn2 = document.createElement("a");
-      btn2.textContent = "Download";
-      btn2.setAttribute("download", details[x].title + ".pdf");
-      btn2.setAttribute("href", details[x].filePath);
-      btn2.setAttribute("target", "_blank");
-      btn2.classList.add("cardBtn", "cardBtn2");
-      cardBtnView.appendChild(btn2);
-    }
-  }
-}
-
-function searchBook(cate) {
-  var len = books.data.length;
-  let details = books.data;
-  var dispay = document.getElementById("searchResaults");
-  var search = document.getElementById("searchBookInput").value;
-
-  dispay.innerHTML = "";
-
-  var count = 0;
-
-  for (var x = 0; x < len; x++) {
-    if (cate != "all") {
-      if (details[x].category == cate && details[x].name == search) {
-        count++;
-
-        var card = document.createElement("div");
-        card.classList.add("card");
-        dispay.appendChild(card);
-
-        var BookImgContainer = document.createElement("div");
-        BookImgContainer.classList.add("BookImgContainer");
-        card.appendChild(BookImgContainer);
-
-        var detailView = document.createElement("div");
-        detailView.classList.add("details");
-        card.appendChild(detailView);
-
-        var bookImage = document.createElement("img");
-        bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
-        BookImgContainer.appendChild(bookImage);
-
-        var name = document.createElement("p");
-        name.textContent = details[x].title;
-        name.classList.add("BookTitle");
-        detailView.appendChild(name);
-
-        var author = document.createElement("p");
-        author.textContent = details[x].author;
-        author.classList.add("BookAuthor");
-        detailView.appendChild(author);
-
-        var starView = document.createElement("div");
-        starView.classList.add("starView");
-        detailView.appendChild(starView);
-
-        for (var s = 1; s <= details[x].stars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star-fill.svg";
-          starView.appendChild(star);
-        }
-
-        let emptyStars = 5 - details[x].stars;
-
-        for (var s = 1; s <= emptyStars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star.svg";
-          starView.appendChild(star);
-        }
-
-        var sample = document.createElement("p");
-        sample.textContent = details[x].Samplediscription;
-        sample.classList.add("BookPara");
-        detailView.appendChild(sample);
-
-        var cardBtnView = document.createElement("div");
-        cardBtnView.classList.add("cardBtnView");
-        detailView.appendChild(cardBtnView);
-
-        var btn1 = document.createElement("a");
-        btn1.textContent = "View";
-        btn1.setAttribute("href", details[x].pagePath);
-        btn1.classList.add("cardBtn", "cardBtn1");
-        cardBtnView.appendChild(btn1);
-
-        var btn2 = document.createElement("a");
-        btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].title + ".pdf");
-        btn2.setAttribute("href", details[x].filePath);
-        btn2.setAttribute("target", "_blank");
-        btn2.classList.add("cardBtn", "cardBtn2");
-        cardBtnView.appendChild(btn2);
-      }
-    } else {
-      if (details[x].name == search) {
-        count++;
-
-        var card = document.createElement("div");
-        card.classList.add("card");
-        dispay.appendChild(card);
-
-        var BookImgContainer = document.createElement("div");
-        BookImgContainer.classList.add("BookImgContainer");
-        card.appendChild(BookImgContainer);
-
-        var detailView = document.createElement("div");
-        detailView.classList.add("details");
-        card.appendChild(detailView);
-
-        var bookImage = document.createElement("img");
-        bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
-        BookImgContainer.appendChild(bookImage);
-
-        var name = document.createElement("p");
-        name.textContent = details[x].title;
-        name.classList.add("BookTitle");
-        detailView.appendChild(name);
-
-        var author = document.createElement("p");
-        author.textContent = details[x].author;
-        author.classList.add("BookAuthor");
-        detailView.appendChild(author);
-
-        var starView = document.createElement("div");
-        starView.classList.add("starView");
-        detailView.appendChild(starView);
-
-        for (var s = 1; s <= details[x].stars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star-fill.svg";
-          starView.appendChild(star);
-        }
-
-        let emptyStars = 5 - details[x].stars;
-
-        for (var s = 1; s <= emptyStars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star.svg";
-          starView.appendChild(star);
-        }
-
-        var sample = document.createElement("p");
-        sample.textContent = details[x].Samplediscription;
-        sample.classList.add("BookPara");
-        detailView.appendChild(sample);
-
-        var cardBtnView = document.createElement("div");
-        cardBtnView.classList.add("cardBtnView");
-        detailView.appendChild(cardBtnView);
-
-        var btn1 = document.createElement("a");
-        btn1.textContent = "View";
-        btn1.setAttribute("href", details[x].pagePath);
-        btn1.classList.add("cardBtn", "cardBtn1");
-        cardBtnView.appendChild(btn1);
-
-        var btn2 = document.createElement("a");
-        btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].title + ".pdf");
-        btn2.setAttribute("href", details[x].filePath);
-        btn2.setAttribute("target", "_blank");
-        btn2.classList.add("cardBtn", "cardBtn2");
-        cardBtnView.appendChild(btn2);
-      }
-    }
-  }
-
-  if (count == 0) {
-    var noItemView = document.createElement("div");
-    noItemView.classList.add("NoresaultText");
-    dispay.appendChild(noItemView);
-
-    var noImg = document.createElement("img");
-    noImg.classList.add("noResaultImg");
-    noImg.src = "images/search_Img/book.svg";
-    noItemView.appendChild(noImg);
-
-    var NoText = document.createElement("h1");
-    NoText.textContent = "No Book Found";
-    noItemView.appendChild(NoText);
-  }
-
-  window.scroll({
-    top: 700,
-    left: 100,
-    behavior: "smooth",
-  });
-}

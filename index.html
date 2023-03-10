@@ -18,9 +18,17 @@
   <body>
     <nav class="mainNav">
       <ul>
-        <a href="index.html"><li>HOME</li></a>
-        <a href="aboutus.html"><li>ABOUT US</li></a>
-        <a href="#contactUs"><li>CONTACT US</li></a>
+
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="index.html#contact">CONTACT US</a>
+        </li>
+
       </ul>
       <div>
         <div>
@@ -28,7 +36,7 @@
             <a class="btn" href="/login.html">LOGIN</a>
           </div>
           <div>
-            <a class="btn-fill" href="/Register.html">REGISTER</a>
+            <a class="btn-fill" href="/register.html">REGISTER</a>
           </div>
         </div>
       </div>
@@ -118,12 +126,16 @@
     <div class="aboutUs">
       <h1 class="aboutTitle">How are we?</h1>
       <div class="aboutUsContent">
-        <img class="aboutImage" src="./images/about/lady-with-book.jpg">
-        <p class="aboutDescription">Our library management system is designed to provide easy<br/>
-          access to books, magazines, journals, and other materials for our<br>
-          members. With our user-friendly interface, you can search for<br>
-          available resources,</p>
-        <button class="aboutbtn" onclick="window.location.href='aboutus.html'">ABOUT US</button>
+        <img class="aboutImage" src="./images/about/lady-with-book.jpg" />
+        <p class="aboutDescription">
+          Our library management system is designed to provide easy<br />
+          access to books, magazines, journals, and other materials for our<br />
+          members. With our user-friendly interface, you can search for<br />
+          available resources,
+        </p>
+        <button class="aboutbtn" onclick="window.location.href='aboutus.html'">
+          ABOUT US
+        </button>
       </div>
     </div>
     <!-- about us  -->
@@ -132,11 +144,31 @@
       <h1 class="contactTitle">Contact us</h1>
       <div class="contactUsContent">
         <form>
-          <input type="text" placeholder="Email Address" name="email" class="contact contactemail"><br>
-          <input type="text" placeholder="First Name" name="fname" class="contact contactfname">
-          <input type="text" placeholder="Last Name" name="lname" class="contact contactlname"><br>
-          <textarea class="contact contactdescription"></textarea><br>
-          <input type="submit" name="submit" value="SEND MASSAGE" class="contactbtn">
+          <input
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            class="contact contactemail"
+          /><br />
+          <input
+            type="text"
+            placeholder="First Name"
+            name="fname"
+            class="contact contactfname"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            name="lname"
+            class="contact contactlname"
+          /><br />
+          <textarea class="contact contactdescription"></textarea><br />
+          <input
+            type="submit"
+            name="submit"
+            value="SEND MASSAGE"
+            class="contactbtn"
+          />
         </form>
       </div>
     </div>
