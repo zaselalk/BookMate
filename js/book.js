@@ -3614,6 +3614,8 @@ function loadBooks(cate) {
   var len = books.length;
   let details = books;
   var dispay = document.getElementById("searchResaults");
+  var search = document.getElementById("searchBookInput").value="";
+
 
   dispay.innerHTML = "";
 
@@ -3796,7 +3798,7 @@ function searchBook(cate) {
 
         var bookImage = document.createElement("img");
         bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
+        bookImage.src = details[x].image;
         BookImgContainer.appendChild(bookImage);
 
         var name = document.createElement("p");
@@ -3870,7 +3872,7 @@ function searchBook(cate) {
 
         var bookImage = document.createElement("img");
         bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
+        bookImage.src = details[x].image;
         BookImgContainer.appendChild(bookImage);
 
         var name = document.createElement("p");
