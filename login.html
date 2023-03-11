@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/signin.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">HOME</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">ABOUT US</a>
+        </li>
+        <li>
+          <a href="index.html#contact">CONTACT US</a>
+        </li>
+      </ul>
+      <div>
+        <div>
+          <div>
+            <a class="btn" href="/login.html">LOGIN</a>
+          </div>
+          <div>
+            <a class="btn-fill" href="/register.html">REGISTER</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <img class="logo_n" src="images/logo/logo1.png" />
+      <h2>User sign in</h2>
+      <form action="#">
+        <label class="us">Username</label><br />
+
+        <input class="f_name" type="text" name="fname" id="f_name" /><br />
+
+        <label class="ps">Password</label> <br />
+
+        <input class="f_pwd" type="password" name="pw" id="n_pwd" /><br />
+        <div class="dek">
+          <button class="btnn_f">
+            <a href="register.html" class="dfe">Register</a>
+          </button>
+          <button class="sizn_f" onclick="myfun()">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="./js/signin.js"></script>
+    <h1>EDU BOOK</h1>
+    <p>
+      Our library management system is desigened to<br />
+      provide easy access to books,magazines,journals,<br />
+      frindly interface,you can search for available<br />
+      resources.
+    </p>
+  </body>
+</html>
