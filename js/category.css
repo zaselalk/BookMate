@@ -23,3 +23,18 @@
     font-weight: bold;
     font-size: 70px;
 }
+
+.categories{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    gap: 45px;
+}
+
+.category{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    padding: 50px;
+    background-color:rgba(165, 147, 106, 1);
+}
