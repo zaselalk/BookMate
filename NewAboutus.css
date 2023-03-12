@@ -49,7 +49,6 @@
   }
 .section1{
     margin:20px;
-    padding: 0px;
 }
 .wh_we_img {
     display: block;
@@ -67,26 +66,29 @@
   }
   .section2{
     display: flex;
-    margin: 0px;
     justify-content: space-between;
     
   }
-  /* #wh_we_1_para{
-    font-size: 30px;
-    text-align: center;
-} */
+ #wh_we_para1{
+    text-align:center;
+    font-size: 25px;
+    margin: 20px;
+    
+ }
 .wh_we_do_img {
     display: block;
-    margin-left: 00px;
+    margin-left: 0px;
     margin-right: auto;
     height: 700px;
     width: 600px;
     position: relative;
   }
   .block1{
-    padding:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
   }
   .back{
-    background-color:burlywood;
+    background-image: url("./images/about/backgro.jpg");
     
   }
