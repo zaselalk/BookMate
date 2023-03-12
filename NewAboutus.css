@@ -73,7 +73,7 @@
     text-align:center;
     font-size: 25px;
     margin: 20px;
-    
+
  }
 .wh_we_do_img {
     display: block;
@@ -91,4 +91,33 @@
   .back{
     background-image: url("./images/about/backgro.jpg");
     
+  }
+  .branches{
+    margin:40px;
+  }
+  .branches_content{
+    display:grid;
+    grid-template-columns: 20vw 20vw 20vw 20vW;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+
+  }
+  .size_of_svg{ 
+    width: 150px;
+    height: 150px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:10%;
+    margin: 50px;
+    padding: 20px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 5px;
   }
