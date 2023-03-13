@@ -1,74 +1,64 @@
-h1{
+h1 {
   font-size: 500%;
   color: #ffffff;
-  margin-top: 170px;
-  margin-left: 95px;
-  margin-bottom: 30px;
+  padding: 10% 8%;
   font-family: sans-serif;
-  
 }
-p{
+p {
   color: #ffffff;
   font-family: sans-serif;
-  margin-left: 95px ;
+  margin-left: 95px;
   font-size: 30px;
 }
-h2{
+h2 {
   margin-top: 100px;
   padding-bottom: 20px;
   color: rgb(33, 31, 31);
 }
-.logo_n{
+.logo_n {
   margin-top: 10%;
   width: 40%;
   height: 30%;
-  margin-left:30%;
-  
+  margin-left: 30%;
 }
-body{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/login/sigup.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    overflow: hidden;
-     
-      
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/login/sigup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 .container {
   float: right;
-  background-color:rgba(255, 255, 255, 0.762);
+  background-color: rgba(255, 255, 255, 0.762);
   width: 400px;
-  height: 80%;
-  height: 80vh;
+  height: 90vh;
   padding: 50px;
-  
 }
 
-
-.f_name{
-    border-radius: 6px;
-    border-color: rgb(231, 231, 236);
-    width: 100%;
-    height:28px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid black;
+.f_name {
+  border-radius: 6px;
+  border-color: rgb(231, 231, 236);
+  width: 100%;
+  height: 28px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
 }
-.f_pwd{
-    border-radius:6px;
-    border-color: rgb(231, 231, 236);
-    width: 100%;
-    height: 28px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid black;
-    
+.f_pwd {
+  border-radius: 6px;
+  border-color: rgb(231, 231, 236);
+  width: 100%;
+  height: 28px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid black;
 }
 .us {
   font-family: sans-serif;
-   
 }
-.bu_t{
+.bu_t {
   text-decoration: none;
   border: 1px solid #1569f7;
   padding: 10px;
@@ -78,9 +68,8 @@ body{
   font-size: 14px;
   text-align: center;
   transition-duration: 400ms;
-
 }
-.a_a{
+.a_a {
   text-decoration: none;
   border: 1px solid #1569f7;
   padding: 10px;
@@ -91,19 +80,19 @@ body{
   font-size: 14px;
   text-align: center;
   transition-duration: 400ms;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
-.a_a:hover{
+.a_a:hover {
   background-color: #1569f7;
   color: white;
   transition-duration: 400ms;
 }
-.dfe{
+.dfe {
   text-decoration: none;
   color: #ffffff;
-  cursor:context-menu;
+  cursor: context-menu;
 }
-.btnn_f{
+.btnn_f {
   text-decoration: none;
   border: 1px solid #1569f7;
   border-radius: 6px;
@@ -113,31 +102,25 @@ body{
   width: 48%;
   transition-duration: 400ms;
   margin-right: 3px;
- 
-  
 }
-.btnn_f:hover{
+.btnn_f:hover {
   transition-duration: 400ms;
   background-color: #1150bd;
-  
 }
-.sizn_f{
+.sizn_f {
   border: 1px solid #1569f7;
-   border-radius: 6px;
-   background: #ffffff;
-   color:#1569f7;
-   padding: 10px;
-   width: 50%;
-   transition-duration: 400ms;  
-   font-weight: bold;
-    
- 
-   
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1569f7;
+  padding: 10px;
+  width: 50%;
+  transition-duration: 400ms;
+  font-weight: bold;
 }
-.sizn_f:hover{
-   color: #ffffff;
-   background-color:#1569f7 ;
+.sizn_f:hover {
+  color: #ffffff;
+  background-color: #1569f7;
 }
-.dek{
-  width:100% ;
+.dek {
+  width: 100%;
 }
