@@ -14,12 +14,13 @@ p{
   font-size: 30px;
 }
 h2{
-  margin-top: 100px;
-  padding-bottom: 20px;
+  margin-top: 10%;
+  padding-bottom: 10px;
+  text-align: center;
   color: rgb(33, 31, 31);
 }
 .logo_n{
-  margin-top: 10%;
+  margin-top: 1%;
   width: 40%;
   height: 30%;
   margin-left:30%;
@@ -36,7 +37,7 @@ body{
 }
 .container {
   float: right;
-  background-color:rgba(255, 255, 255, 0.762);
+  background-color:rgba(254, 248, 248, 0.978);
   width: 400px;
   height: 80%;
   height: 80vh;
@@ -48,20 +49,24 @@ body{
 .f_name{
     border-radius: 6px;
     border-color: rgb(231, 231, 236);
+    background-color: #f7eac7;
     width: 100%;
     height:28px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom:3%;
     border: 1px solid black;
+    padding: 5px;
 }
 .f_pwd{
     border-radius:6px;
     border-color: rgb(231, 231, 236);
+    background-color: #f7eac7;
     width: 100%;
     height: 28px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid black;
+    padding: 5px;
     
 }
 .us {
@@ -102,42 +107,50 @@ body{
   text-decoration: none;
   color: #ffffff;
   cursor:context-menu;
+  
 }
 .btnn_f{
   text-decoration: none;
-  border: 1px solid #1569f7;
+  border: 1px solid #948451;
+  font-weight: bold;
   border-radius: 6px;
-  background: #1569f7;
+  background: #948451;
   color: aliceblue;
-  padding: 10px;
+  padding: 8px;
   width: 48%;
   transition-duration: 400ms;
-  margin-right: 3px;
+  margin-left: 25%;
+  margin-top: 4%;
  
   
 }
 .btnn_f:hover{
   transition-duration: 400ms;
-  background-color: #1150bd;
+  background-color: #5e5333;
   
 }
 .sizn_f{
-  border: 1px solid #1569f7;
+  border: 1px solid #5e433a;
    border-radius: 6px;
-   background: #ffffff;
-   color:#1569f7;
-   padding: 10px;
-   width: 50%;
+   margin-bottom: 8%;
+   background:#5e433a;
+   color:#ffffff;
+   padding: 8px;
+   width: 103%;
    transition-duration: 400ms;  
    font-weight: bold;
+   margin-top: 5%;
     
  
    
 }
 .sizn_f:hover{
    color: #ffffff;
-   background-color:#1569f7 ;
+   background-color:#452e27 ;
 }
-.dek{
+.dek {
   width:100% ;
+}
+hr{
+  width: 102%;
 }
