@@ -3765,8 +3765,11 @@ function loadBooks(cate) {
 }
 
 function searchBook(cate) {
-  var len = books.data.length;
-  let details = books.data;
+
+ 
+
+  var len = books.length;
+  let details = books;
   var dispay = document.getElementById("searchResaults");
   var search = document.getElementById("searchBookInput").value;
 
@@ -3776,7 +3779,7 @@ function searchBook(cate) {
 
   for (var x = 0; x < len; x++) {
     if (cate != "all") {
-      if (details[x].category == cate && details[x].name == search) {
+      if (details[x].category == cate && details[x].title == search) {
         count++;
 
         var card = document.createElement("div");
@@ -3850,7 +3853,7 @@ function searchBook(cate) {
         cardBtnView.appendChild(btn2);
       }
     } else {
-      if (details[x].name == search) {
+      if (details[x].title == search) {
         count++;
 
         var card = document.createElement("div");

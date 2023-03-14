@@ -27,10 +27,10 @@
 /* Global utility classes */
 .btn {
   text-decoration: none;
-  border: 1px solid #1569f7;
+  border: 1px solid #5e433b;
   padding: 10px;
   border-radius: 4px;
-  color: #1569f7;
+  color: #5e433b;
   width: 80px;
   font-size: 14px;
   text-align: center;
@@ -38,17 +38,17 @@
 }
 
 .btn:hover {
-  background-color: #1569f7;
+  background-color: #5e433b;
   color: white;
   transition-duration: 400ms;
 }
 
 .btn-fill {
   text-decoration: none;
-  border: 1px solid #1569f7;
+  border: 1px solid #5e433b;
   padding: 10px;
   border-radius: 4px;
-  background: #1569f7;
+  background: #5e433b;
   color: aliceblue;
   width: 80px;
   font-size: 14px;
@@ -58,7 +58,7 @@
 
 .btn-fill:hover {
   transition-duration: 400ms;
-  background-color: #1150bd;
+  background-color: #7c5245;
 }
 
 .icon {
@@ -75,13 +75,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ece8e8;
+  background: #f6eac7;
   padding: 10px 0px;
-  padding-inline: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
+
 nav ul {
   list-style: none;
   display: flex;
+  padding-left: 50px;
 }
 nav ul li {
   padding: 14px;
@@ -89,11 +94,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  font-weight: bold;
+  color: #7c5245;
 }
 
 nav ul li:hover {
-  color: #1569f7;
+  color: #864430;
   transition-duration: 300ms;
   cursor: pointer;
 }
@@ -108,7 +114,7 @@ footer {
   margin-top: 100px;
   width: 90%;
   float: left;
-  background: #dee7fc;
+  background: #635a44;
   padding: 5%;
   margin-bottom: 0;
 }
@@ -124,4 +130,15 @@ footer {
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  color: white;
+}
+
+.footer-links ul li {
+  list-style: none;
+  padding: 5px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 3px;
 }
