@@ -1,0 +1,50 @@
+.header {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(67, 69, 77, 0.52),
+      rgba(34, 33, 34, 0.73)
+    ),
+    url(/images/category/R.jpg);
+}
+
+.header-title {
+  color: white;
+  font-size: 32px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 200px 30px;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 150px;
+  margin: 15px;
+  padding: 50px;
+  background-color: rgba(165, 147, 106, 1);
+  border-radius: 10px;
+}
+
+.category:hover {
+  background-color: rgb(148, 129, 87);
+  margin-top: -3px;
+  transition: ease-in;
+  transition-duration: 0.4s;
+}
+
+.categories a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
