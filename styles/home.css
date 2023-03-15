@@ -238,7 +238,7 @@
   padding: 0px 10px;
 }
 /* contact us  */
-.contact-section{
+#contact{
   min-height: 100vh;
   position: relative;
   justify-content: center;
