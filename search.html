@@ -11,32 +11,37 @@
   </head>
   <body onload="loadBooks('all')">
     <!-- header -->
-    <nav class="mainNav">
-      <ul>
-        <li>
-          <a href="/">HOME</a>
-        </li>
-        <li>
-          <a href="./aboutus.html">ABOUT US</a>
-        </li>
-        <li>
-          <a href="index.html#contact">CONTACT US</a>
-        </li>
-        <li>
-          <a href="./category.html">CATEGORIES</a>
-        </li>
-      </ul>
-      <div>
-        <div>
+    <header>
+      <nav class="mainNav" id="navbar">
+        <div class="navbar-content" id="navbar-content ">
+          <ul>
+            <li>
+              <a href="/index.html" class="navbar-links">HOME</a>
+            </li>
+            <li>
+              <a href="./aboutus.html" class="navbar-links">ABOUT US</a>
+            </li>
+            <li>
+              <a href="index.html#contact" class="navbar-links">CONTACT US</a>
+            </li>
+            <li>
+              <a href="category.html" class="navbar-links">CATEGORIES</a>
+            </li>
+          </ul>
           <div>
-            <a class="btn" href="/login.html">LOGIN</a>
-          </div>
-          <div>
-            <a class="btn-fill" href="/register.html">REGISTER</a>
+            <div>
+              <a class="btn" href="/login.html" id="login-btn">LOGIN</a>
+            </div>
+            <div>
+              <a class="btn-fill" href="/register.html" id="reg-btn"
+                >REGISTER</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+        <hr class="nav-divider" />
+      </nav>
+    </header>
     <!-- header -->
 
     <!-- cover image -->
@@ -133,8 +138,17 @@
 
     <!-- footer -->
     <footer>
-      <div>
-        <img src="./images/logo/logo2.png" alt="logo" width="200px" srcset="" />
+      <div class="footer-brand">
+        <img
+          src="./images/logo/logo_2.png"
+          alt="logo"
+          width="200px"
+          class="footer-logo"
+        />
+        <div>|</div>
+        <div class="footer-tagline">
+          Your personal digital reading companion.
+        </div>
       </div>
       <section class="footer-details">
         <div class="footer-contact">
@@ -177,15 +191,34 @@
         </div>
 
         <div class="footer-links">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="/index.html">Home Page</a></li>
-            <li><a href="/aboutus.html">About Page</a></li>
-            <li><a href="/index.html#contact">Contact Page</a></li>
-          </ul>
+          <a href="/index.html">Home Page</a>
+          <a href="/aboutus.html">About Us</a>
+          <a href="/search.html">Login </a>
+          <a href="/search.html">Register </a>
         </div>
       </section>
+
+      <div class="footer-to-top">
+        <a href="#heading">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+            />
+          </svg>
+          Back to Top</a
+        >
+      </div>
     </footer>
+    <script src="./js/navbar.js"></script>
     <!-- footer -->
 
     <script src="js/animationScript.js"></script>
