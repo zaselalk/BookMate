@@ -38,55 +38,40 @@
     <div class="cont">
       <img class="logo_r" src="images/logo/logo1.png" />
       <h2>Create New Account</h2>
-      <form action="#">
-        <label class="ema">Emali</label><br />
-        <input class="em_b" type="text" id="ema" c /> <br />
+    <form action="#"> 
+    <input class="em_b" type="email" id="ema" placeholder="Email"> <br>
 
-        <label class="pw">Password</label><br />
-        <input class="pa_b" type="password" id="pwd2" /><br />
+    <input class="pa_b" type="password" id="pwd2" placeholder="Password"><br>
 
-        <label class="re">Re-enter password</label><br />
-        <input class="re_b" type="password" id="re_pwd" /><br />
-
-        <table class="tab_s">
-          <tr>
-            <td>Age</td>
+    <input class="re_b" type="password" id="re_pwd" placeholder="Re-enter password"><br>
+    
+    <table class="tab_s">
+        <tr>
+            <td>Birthday</td>
             <td class="aj">Gender</td>
-          </tr>
-          <tr>
-            <td><input class="ag_b" type="text" id="n_age" /></td>
-            <td>
-              <select class="ge_b">
-                <option>Male</option>
-                <option>Female</option>
-              </select>
+        </tr>
+        <tr>
+           <td> <input class="ag_b" type="date" id="n_age"></td>
+           <td>
+                <select class="ge_b">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
             </td>
-          </tr>
-        </table>
-        <div class="fix_t">
-          <input
-            class="btnnf"
-            type="submit"
-            id="sub_n1"
-            value="sign Up"
-            onclick="register_f()"
-          />
-          <input
-            class="siz_f"
-            type="submit"
-            id="sub_n2"
-            value="Have an Account"
-          />
-        </div>
-      </form>
-    </div>
-    <script src="./js/Register.js"></script>
-    <h1>EDU BOOK</h1>
-    <p>
-      Our library management system is desigened to<br />
-      provide easy access to books,magazines,journals,<br />
-      frindly interface,you can search for available<br />
-      resources.
-    </p>
-  </body>
+        </tr>
+    </table>
+  <div class="fix_t">
+    <input class="btnnf" type="submit" id="sub_n1" value="Sign up" onclick="register_f()"><hr>
+    <input class=" siz_f " type="submit" id="sub_n2" value="Have an Account">
+  </div>
+    </form> 
+  </div>
+      <script src="./js/Register.js"></script>
+      <h1>BOOK MATE</h1>
+      <p>Our library management system is desigened to<br> 
+        provide easy access to books,magazines,journals,<br>
+        frindly interface,you can search for available<br>
+        resources.
+     </p>
+</body>
 </html>

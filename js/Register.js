@@ -8,7 +8,7 @@ function register_f(){
     }
     else{
         valid_f();
-        agg_valid();
+        agg_valid;
     }    
 }
 

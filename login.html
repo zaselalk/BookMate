@@ -37,19 +37,17 @@
       <img class="logo_n" src="images/logo/logo1.png" />
       <h2>User sign in</h2>
       <form action="#">
-        <label class="us">Username</label><br />
 
-        <input class="f_name" type="email" name="fname" id="f_name" /><br />
+        <input class="f_name" type="text" name="fname" id="f_name" placeholder="Username" /><br />
 
-        <label class="ps">Password</label> <br />
+        <input class="f_pwd" type="password" name="pw" id="n_pwd"  placeholder="Password"/><br />
+      <div class="dek">
+        <button class="sizn_f" onclick="myfun()">Sign in</button>
+        <hr>
+       <button class="btnn_f " > <a href="register.html"  class="dfe" >Create new account</a></button>
+      
+      </div>
 
-        <input class="f_pwd" type="password" name="pw" id="n_pwd" /><br />
-        <div class="dek">
-          <button class="btnn_f">
-            <a href="register.html" class="dfe">Register</a>
-          </button>
-          <button class="sizn_f" onclick="myfun()">Login</button>
-        </div>
       </form>
     </div>
 
