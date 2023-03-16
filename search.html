@@ -10,23 +10,19 @@
     <link rel="stylesheet" href="styles/searchStyle.css" />
   </head>
   <body>
-    <!-- header -->
     <header>
       <nav class="mainNav" id="navbar">
         <div class="navbar-content" id="navbar-content ">
           <ul>
-            <li>
-              <a href="/index.html" class="navbar-links">HOME</a>
-            </li>
-            <li>
-              <a href="./aboutus.html" class="navbar-links">ABOUT US</a>
-            </li>
-            <li>
-              <a href="index.html#contact" class="navbar-links">CONTACT US</a>
-            </li>
-            <li>
-              <a href="category.html" class="navbar-links">CATEGORIES</a>
-            </li>
+            <a href="./index.html" class="navbar-links"> <li>HOME</li></a>
+            <a href="./aboutus.html" class="navbar-links"> <li>ABOUT US</li></a>
+            <a href="./index.html#contact" class="navbar-links"
+              ><li>CONTACT US</li></a
+            >
+
+            <a href="./category.html" class="navbar-links">
+              <li>CATEGORIES</li></a
+            >
           </ul>
           <div>
             <div>
@@ -42,7 +38,6 @@
         <hr class="nav-divider" />
       </nav>
     </header>
-
     <div class="mainbg">
       <div class="darkBg">
         <h1 class="mainTextheading">Search Books</h1>
@@ -59,11 +54,6 @@
         />
         <button class="search-btn" type="submit">SEARCH</button>
       </form>
-
-      <!-- <div class="SearchImgDiv">
-        <img src="images/search_Img/search.svg" class="searchicon" />
-        <button class="search-btn" onclick="searchBook('all')">SEARCH</button>
-      </div> -->
     </div>
 
     <div class="searchResaults" id="searchResaults"></div>

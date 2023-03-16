@@ -33,11 +33,11 @@
 
 .heading-logo {
   width: 450px;
-  margin-top: 100px;
+  margin-top: 14%;
 }
 #tagLine {
   position: relative;
-  margin-top: 3%;
+  margin-top: 6%;
   text-align: center;
   font-size: 20pt;
   font-family: Inter;
@@ -108,7 +108,7 @@
   transition: 400ms;
 }
 
-.bottom-part{
+.bottom-part {
   background-image: url("../images/home/oldbookpaper.jpg");
   background-size: 100% 100%;
 }
@@ -247,11 +247,11 @@
   text-decoration: none;
 }
 
-.about-content-section .social svg{
+.about-content-section .social svg {
   padding: 0px 10px;
 }
 
-#contact{
+#contact {
   min-height: 100vh;
   position: relative;
   justify-content: center;
