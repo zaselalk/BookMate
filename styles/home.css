@@ -133,7 +133,7 @@
   margin-left: 10%;
   margin-top: 20px;
 }
-.serviceContent a {
+.serviceContent div {
   width: 100%;
   height: 75%;
   background-color: transparent;
@@ -146,14 +146,14 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
-.serviceContent a {
+.serviceContent div {
   overflow: hidden;
   transition: 0.3s;
 }
-.serviceContent a:hover {
+.serviceContent div:hover {
   transform: translateY(-20px);
 }
-.serviceContent a::before {
+.serviceContent div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -164,7 +164,7 @@
   transform: skew(45deg) translate(450px);
   transition: 0.5s;
 }
-.serviceContent a:hover::before {
+.serviceContent div:hover::before {
   transform: skew(45deg) translate(-200px);
 }
 .service {
