@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-Regular.otf");
+  src: url("../fonts/Inter-Regular.otf");
 }
 /* heading  */
 * {
@@ -30,11 +30,10 @@
   align-items: center;
   justify-content: center;
 }
+
 .heading-logo {
   width: 450px;
   margin-top: 100px;
-  /* background-color: rgba(247, 245, 245, 0.63);
-  padding: 30px; */
 }
 #tagLine {
   position: relative;
@@ -47,6 +46,7 @@
 .heading box-icon {
   size: 102px;
 }
+
 .search-button {
   display: inline-flex;
   justify-content: center;
@@ -58,6 +58,7 @@
   height: 50px;
   width: 400px;
   margin-top: 5%;
+
   text-align: center;
   gap: 10%;
   border: 3px solid #fff6f6;
@@ -106,11 +107,12 @@
 .navSelect5 {
   transition: 400ms;
 }
-/* bottom section  */
-.bottom-part {
-  background-image: url("/images/home/oldbookpaper.jpg");
+
+.bottom-part{
+  background-image: url("../images/home/oldbookpaper.jpg");
   background-size: 100% 100%;
 }
+
 /* services  */
 .services {
   height: 100vh;
@@ -133,7 +135,7 @@
   margin-left: 10%;
   margin-top: 20px;
 }
-.serviceContent a {
+.serviceContent div {
   width: 100%;
   height: 75%;
   background-color: transparent;
@@ -146,14 +148,14 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
 }
-.serviceContent a {
+.serviceContent div {
   overflow: hidden;
   transition: 0.3s;
 }
-.serviceContent a:hover {
+.serviceContent div:hover {
   transform: translateY(-20px);
 }
-.serviceContent a::before {
+.serviceContent div::before {
   content: "";
   position: absolute;
   top: 0;
@@ -164,7 +166,7 @@
   transform: skew(45deg) translate(450px);
   transition: 0.5s;
 }
-.serviceContent a:hover::before {
+.serviceContent div:hover::before {
   transform: skew(45deg) translate(-200px);
 }
 .service {
@@ -244,11 +246,12 @@
 .about-content-section .social a {
   text-decoration: none;
 }
-.about-content-section .social box-icon {
+
+.about-content-section .social svg{
   padding: 0px 10px;
 }
-/* contact us  */
-.contact-section {
+
+#contact{
   min-height: 100vh;
   position: relative;
   justify-content: center;
