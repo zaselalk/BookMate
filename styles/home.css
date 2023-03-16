@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-Regular.otf");
+  src: url("../fonts/Inter-Regular.otf");
 }
 /* heading  */
 * {
@@ -38,11 +38,6 @@
   font-size: 20pt;
   font-family: Inter;
 }
-
-.heading box-icon{
-  size: 102px;
-
-}
 .search-button {
   cursor: pointer;
   font-size: 15pt;
@@ -60,7 +55,6 @@
   border-radius: 30px;
   position: relative;
   font-family: Inter;
-
 }
 /* bottom navigation  */
 .navigation {
@@ -105,7 +99,7 @@
 }
 /* bottom section  */
 .bottom-part{
-  background-image: url("/images/home/oldbookpaper.jpg");
+  background-image: url("../images/home/oldbookpaper.jpg");
   background-size: 100% 100%;
 }
 /* services  */
@@ -240,7 +234,7 @@
 .about-content-section .social a{
   text-decoration: none;
 }
-.about-content-section .social box-icon{
+.about-content-section .social svg{
   padding: 0px 10px;
 }
 /* contact us  */
