@@ -5,10 +5,196 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mathematics Books</title>
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="styles/searchStyle.css" />
+    <link rel="stylesheet" href="../global.css" />
+
+    <style>
+      @font-face {
+        font-family: "FjallaOne";
+        src: url("fonts/FjallaOne.ttf");
+      }
+
+      @font-face {
+        font-family: "exo";
+        src: url("fonts/exo.ttf");
+      }
+
+      .mainbg {
+        width: 100%;
+        height: 550px;
+        background-image: url("../images/search_Img/mainBg.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .darkBg {
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .mainTextPara {
+        color: white;
+        line-height: 25px;
+        margin-top: 40px;
+        text-align: center;
+      }
+
+      .mainTextheading {
+        color: white;
+        font-weight: bold;
+        font-size: 70px;
+        margin-bottom: 30px;
+      }
+
+      .navigation {
+        width: 100%;
+        height: 70px;
+        background-color: #343435;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .activeNacSelect {
+        background-color: #1569f7;
+      }
+
+      .navSelect {
+        padding-inline: 40px;
+        height: 70px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navSelect:hover {
+        background-color: #0b45aa;
+      }
+
+      .navSelect2 {
+        transition-delay: 100ms;
+      }
+
+      .navSelect3 {
+        transition-delay: 200ms;
+      }
+
+      .navSelect4 {
+        transition-delay: 300ms;
+      }
+
+      .navSelect5 {
+        transition-delay: 400ms;
+      }
+
+      .searchResaults {
+        margin-left: 5%;
+        padding-bottom: 50px;
+        margin-top: 30px;
+      }
+
+      .card {
+        width: 40%;
+        padding: 15px;
+        float: left;
+        margin-top: 50px;
+        margin-right: 7%;
+        box-shadow: 0 5px 15px rgba(65, 64, 64, 0.5);
+        border-radius: 15px;
+        background-color: #e7f4fc;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .BookImgContainer {
+        width: 30%;
+        float: left;
+      }
+
+      .BookImg {
+        width: 150px;
+        height: 200px;
+      }
+
+      .details {
+        width: 60%;
+        padding-left: 20px;
+      }
+
+      .BookTitle {
+        font-size: 30px;
+        font-family: FjallaOne;
+      }
+
+      .BookAuthor {
+        font-size: 20px;
+        font-family: exo;
+      }
+
+      .starView {
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      .star {
+        width: 20px;
+        margin-right: 5px;
+      }
+
+      .BookPara {
+        font-size: 13px;
+        color: rgb(100, 98, 98);
+      }
+
+      .cardBtnView {
+        margin-top: 30px;
+      }
+
+      .cardBtn {
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .cardBtn1 {
+        background-color: #1569f7;
+        padding-inline: 60px;
+      }
+
+      .cardBtn2 {
+        background-color: #29a8ef;
+        padding-inline: 40px;
+        margin-left: 5px;
+      }
+
+      .NoresaultText {
+        margin-top: 50px;
+        width: 95%;
+        text-align: center;
+        color: #7a7b7c;
+      }
+
+      .noResaultImg {
+        width: 80px;
+      }
+    </style>
   </head>
-  <body onload="loadBooks('math')">
+  <body onload="loadBooks('mathematics')">
     <!-- header -->
     <header>
       <nav class="mainNav" id="navbar">
@@ -47,96 +233,16 @@
     <div class="mainbg">
       <div class="darkBg">
         <h1 class="mainTextheading">Mathematics</h1>
-
-        <div class="hidden">
-          <input type="text" class="searchInput" id="searchBookInput" />
-          <div class="SearchImgDiv">
-            <img
-              src="images/search_Img/search.svg"
-              class="searchicon"
-              onclick="searchBook('math')"
-            />
-          </div>
-        </div>
-
-        <div class="hidden">
-          <p class="mainTextPara">
-            Our library management system is designed to provide easy access to
-            books, magazines, journals, <br />
-            and other materials for our members. With our user-friendly
-            interface, <br />
-            you can search for available resources,
-          </p>
-        </div>
       </div>
     </div>
-    <!-- cover image -->
 
-    <!-- navigation -->
-    <div class="navigation">
-      <a href="search.html"><div class="navSelect hidden">All</div></a>
-      <a href="science.html"
-        ><div class="navSelect navSelect2 hidden">Science</div></a
-      >
-      <a href="maths.html"
-        ><div class="navSelect activeNacSelect navSelect3 hidden">
-          Mathematics
-        </div></a
-      >
-      <a href="technology.html"
-        ><div class="navSelect navSelect4 hidden">Technology</div></a
-      >
-      <a href="index.html"
-        ><div class="navSelect navSelect5 hidden">Home</div></a
-      >
-    </div>
-    <!-- navigation -->
-
-    <div class="searchResaults" id="searchResaults">
-      <!-- card -->
-      <div class="card hidden">
-        <div class="BookImgContainer">
-          <img
-            src="images/search_img/bookImages/psychology.png"
-            class="BookImg"
-          />
-        </div>
-        <div class="details">
-          <p class="BookTitle">Psychology & Money</p>
-          <p class="BookAuthor">Morgan Housel</p>
-
-          <div class="starView">
-            <img src="images/search_Img/star-fill.svg" class="star" />
-            <img src="images/search_Img/star-fill.svg" class="star" />
-            <img src="images/search_Img/star-fill.svg" class="star" />
-            <img src="images/search_Img/star-fill.svg" class="star" />
-            <img src="images/search_Img/star.svg" class="star" />
-          </div>
-
-          <span class="BookPara"
-            >Our library management system is designed to provide easy access to
-            books, magazines, journals,</span
-          ><br />
-
-          <div class="cardBtnView">
-            <a class="cardBtn cardBtn1">View</a>
-            <a
-              href="books/PsychologyOfmoney.pdf"
-              target="_blank"
-              class="cardBtn cardBtn2"
-              >Download</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- card -->
-    </div>
+    <div class="searchResaults" id="searchResaults"></div>
 
     <!-- footer -->
     <footer>
       <div class="footer-brand">
         <img
-          src="./images/logo/logo_2.png"
+          src="../images/logo/logo_2.png"
           alt="logo"
           width="200px"
           class="footer-logo"
@@ -214,9 +320,8 @@
         >
       </div>
     </footer>
-    <script src="./js/navbar.js"></script>
-
-    <script src="js/animationScript.js"></script>
-    <script src="js/book.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/animationScript.js"></script>
+    <script src="../js/book.js"></script>
   </body>
 </html>
