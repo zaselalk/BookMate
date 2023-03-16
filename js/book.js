@@ -285,8 +285,7 @@ const books = [
   },
   {
     id: "eeed560e-7f00-4b28-8e5c-03b4efcda226",
-    title:
-      "Discourse on the Method",
+    title: "Discourse on the Method",
     image: "https://www.gutenberg.org/cache/epub/59/pg59.cover.medium.jpg",
     author: "Descartes, Ren\u00e9",
     category: "science",
@@ -3764,168 +3763,90 @@ function loadBooks(cate) {
   }
 }
 
-function searchBook(cate) {
-
- 
-
+function searchBook() {
+  event.preventDefault();
   var len = books.length;
   let details = books;
   var dispay = document.getElementById("searchResaults");
   var search = document.getElementById("searchBookInput").value;
 
   dispay.innerHTML = "";
-
   var count = 0;
 
   for (var x = 0; x < len; x++) {
-    if (cate != "all") {
-      if (details[x].category == cate && details[x].title == search) {
-        count++;
+    const regex = new RegExp(search, "g");
+    if (regex.test(details[x].title)) {
+      count++;
 
-        var card = document.createElement("div");
-        card.classList.add("card");
-        dispay.appendChild(card);
+      var card = document.createElement("div");
+      card.classList.add("card");
+      dispay.appendChild(card);
 
-        var BookImgContainer = document.createElement("div");
-        BookImgContainer.classList.add("BookImgContainer");
-        card.appendChild(BookImgContainer);
+      var BookImgContainer = document.createElement("div");
+      BookImgContainer.classList.add("BookImgContainer");
+      card.appendChild(BookImgContainer);
 
-        var detailView = document.createElement("div");
-        detailView.classList.add("details");
-        card.appendChild(detailView);
+      var detailView = document.createElement("div");
+      detailView.classList.add("details");
+      card.appendChild(detailView);
 
-        var bookImage = document.createElement("img");
-        bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
-        BookImgContainer.appendChild(bookImage);
+      var bookImage = document.createElement("img");
+      bookImage.classList.add("BookImg");
+      bookImage.src = details[x].image;
+      BookImgContainer.appendChild(bookImage);
 
-        var name = document.createElement("p");
-        name.textContent = details[x].title;
-        name.classList.add("BookTitle");
-        detailView.appendChild(name);
+      var name = document.createElement("p");
+      name.textContent = details[x].title;
+      name.classList.add("BookTitle");
+      detailView.appendChild(name);
 
-        var author = document.createElement("p");
-        author.textContent = details[x].author;
-        author.classList.add("BookAuthor");
-        detailView.appendChild(author);
+      var author = document.createElement("p");
+      author.textContent = details[x].author;
+      author.classList.add("BookAuthor");
+      detailView.appendChild(author);
 
-        var starView = document.createElement("div");
-        starView.classList.add("starView");
-        detailView.appendChild(starView);
+      var starView = document.createElement("div");
+      starView.classList.add("starView");
+      detailView.appendChild(starView);
 
-        for (var s = 1; s <= details[x].stars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star-fill.svg";
-          starView.appendChild(star);
-        }
-
-        let emptyStars = 5 - details[x].stars;
-
-        for (var s = 1; s <= emptyStars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star.svg";
-          starView.appendChild(star);
-        }
-
-        var sample = document.createElement("p");
-        sample.textContent = details[x].Samplediscription;
-        sample.classList.add("BookPara");
-        detailView.appendChild(sample);
-
-        var cardBtnView = document.createElement("div");
-        cardBtnView.classList.add("cardBtnView");
-        detailView.appendChild(cardBtnView);
-
-        var btn1 = document.createElement("a");
-        btn1.textContent = "View";
-        btn1.setAttribute("href", details[x].pagePath);
-        btn1.classList.add("cardBtn", "cardBtn1");
-        cardBtnView.appendChild(btn1);
-
-        var btn2 = document.createElement("a");
-        btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].title + ".pdf");
-        btn2.setAttribute("href", details[x].filePath);
-        btn2.setAttribute("target", "_blank");
-        btn2.classList.add("cardBtn", "cardBtn2");
-        cardBtnView.appendChild(btn2);
+      for (var s = 1; s <= details[x].stars; s++) {
+        var star = document.createElement("img");
+        star.classList.add("star");
+        star.src = "images/search_Img/star-fill.svg";
+        starView.appendChild(star);
       }
-    } else {
-      if (details[x].title == search) {
-        count++;
 
-        var card = document.createElement("div");
-        card.classList.add("card");
-        dispay.appendChild(card);
+      let emptyStars = 5 - details[x].stars;
 
-        var BookImgContainer = document.createElement("div");
-        BookImgContainer.classList.add("BookImgContainer");
-        card.appendChild(BookImgContainer);
-
-        var detailView = document.createElement("div");
-        detailView.classList.add("details");
-        card.appendChild(detailView);
-
-        var bookImage = document.createElement("img");
-        bookImage.classList.add("BookImg");
-        bookImage.src = details[x].img;
-        BookImgContainer.appendChild(bookImage);
-
-        var name = document.createElement("p");
-        name.textContent = details[x].title;
-        name.classList.add("BookTitle");
-        detailView.appendChild(name);
-
-        var author = document.createElement("p");
-        author.textContent = details[x].author;
-        author.classList.add("BookAuthor");
-        detailView.appendChild(author);
-
-        var starView = document.createElement("div");
-        starView.classList.add("starView");
-        detailView.appendChild(starView);
-
-        for (var s = 1; s <= details[x].stars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star-fill.svg";
-          starView.appendChild(star);
-        }
-
-        let emptyStars = 5 - details[x].stars;
-
-        for (var s = 1; s <= emptyStars; s++) {
-          var star = document.createElement("img");
-          star.classList.add("star");
-          star.src = "images/search_Img/star.svg";
-          starView.appendChild(star);
-        }
-
-        var sample = document.createElement("p");
-        sample.textContent = details[x].Samplediscription;
-        sample.classList.add("BookPara");
-        detailView.appendChild(sample);
-
-        var cardBtnView = document.createElement("div");
-        cardBtnView.classList.add("cardBtnView");
-        detailView.appendChild(cardBtnView);
-
-        var btn1 = document.createElement("a");
-        btn1.textContent = "View";
-        btn1.setAttribute("href", details[x].pagePath);
-        btn1.classList.add("cardBtn", "cardBtn1");
-        cardBtnView.appendChild(btn1);
-
-        var btn2 = document.createElement("a");
-        btn2.textContent = "Download";
-        btn2.setAttribute("download", details[x].title + ".pdf");
-        btn2.setAttribute("href", details[x].filePath);
-        btn2.setAttribute("target", "_blank");
-        btn2.classList.add("cardBtn", "cardBtn2");
-        cardBtnView.appendChild(btn2);
+      for (var s = 1; s <= emptyStars; s++) {
+        var star = document.createElement("img");
+        star.classList.add("star");
+        star.src = "images/search_Img/star.svg";
+        starView.appendChild(star);
       }
+
+      var sample = document.createElement("p");
+      sample.textContent = details[x].Samplediscription;
+      sample.classList.add("BookPara");
+      detailView.appendChild(sample);
+
+      var cardBtnView = document.createElement("div");
+      cardBtnView.classList.add("cardBtnView");
+      detailView.appendChild(cardBtnView);
+
+      var btn1 = document.createElement("a");
+      btn1.textContent = "View";
+      btn1.setAttribute("href", `book.html?id=${details[x].id}`);
+      btn1.classList.add("cardBtn", "cardBtn1");
+      cardBtnView.appendChild(btn1);
+
+      var btn2 = document.createElement("a");
+      btn2.textContent = "Download";
+      btn2.setAttribute("download", details[x].title + ".pdf");
+      btn2.setAttribute("href", details[x].filePath);
+      btn2.setAttribute("target", "_blank");
+      btn2.classList.add("cardBtn", "cardBtn2");
+      cardBtnView.appendChild(btn2);
     }
   }
 

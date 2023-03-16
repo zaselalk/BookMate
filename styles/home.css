@@ -31,11 +31,9 @@
   justify-content: center;
 }
 
-.heading-logo{
-  width: 200px;
-  margin-top: 10%;
-
-
+.heading-logo {
+  width: 450px;
+  margin-top: 100px;
 }
 #tagLine {
   position: relative;
