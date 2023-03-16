@@ -16,14 +16,14 @@
           src: url("");
         }*/
       
-      /*Exo*/
-      @font-face {
+      
+      @font-face {    /*Import font Exo  */
           font-family: "Exo";
           src: url("fonts\Exo-Regular.otf");
         }
 
-       /*Fjalla One*/
-      @font-face {
+       
+      @font-face { /*Import font Fjalla One*/
           font-family: "Fjalla One";
           src: url("fonts\FjallaOne-Regular.ttf");
         }
@@ -94,6 +94,7 @@
 
         }
 
+        
         .downloadbtn{    /* download button */
 
             position: absolute;
@@ -107,8 +108,19 @@
 
         }
 
+        .download-icon{ /*download icon */
+
+            position: absolute;
+            left: 49.07%;
+            right: 49.88%;
+            top: 26.87%;
+            bottom: 72.47%;
+            background-image: url('icon.png');
+
+}
+
         
-          .downloadbtn:first-of-type{ /* download button text */
+        .downloadbtn:first-of-type{ /* download button text */
 
             position: absolute;
             width: 116px;
@@ -141,6 +153,34 @@
           border-radius: 50px;
         }
 
+        .preview-icon{  /*preview icon */
+
+          position: absolute;
+          left: 64.7%;
+          right: 34.26%;
+          top: 26.95%;
+          bottom: 72.45%;
+
+          border: 1.5px solid #F6F1F1;
+        }
+
+        .book-description{ /*book-description*/
+
+          position: absolute;
+          width: 1389px;
+          height: 471px;
+          left: 184px;
+          top: 1021px;
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 41px;
+          line-height: 50px;
+
+          color: rgba(10, 9, 9, 0.6);
+
+        }
 
 
 
@@ -187,18 +227,33 @@
         Psychology & Money
 
       </p>
+
       <p class="author"> <!--author-->
         Morgan Housel
       </p>
-      <button type="button" class="downloadbtn" ><!--download button-->
-        <img  alt=" download button ">  <!--download button image-->
+
+
+      <button type="button" class="downloadbtn" ><!--download icon-->
+        <img  class="">  <!--download button image-->
         Download
       </button>
+
+
       <button type="button" class="previewbtn" ><!--Preview book button-->
-        <img  alt=" prebook button ">  <!--Preview book button image-->
+        <img  alt=" prebook button ">  <!--Preview book icon-->
         Preview book
       </button>
-      <!--description-->
+
+
+      <p> <!--description-->
+        Psychology and money are deeply intertwined, and understanding this relationship is 
+        crucial for anyone looking to manage their finances effectively. Here's a review of 
+        some key insights from the field of psychology that can help you make better financial 
+        decisions: Emotions and money: Emotional responses like fear, greed, 
+        and anxiety can have a significant impact on our financial decision-making. For example, fear of loss c.
+      </p>
+
+      
 
       <footer><!--footer-->
         <div>Logo</div>
