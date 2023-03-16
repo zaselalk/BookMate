@@ -6,66 +6,104 @@ body {
   background-attachment: fixed;
   overflow: hidden;
 }
-h1 {
-  font-size: 500%;
-  color: #ffffff;
-  margin-top: 170px;
-  margin-left: 95px;
-  margin-bottom: 30px;
-  font-family: sans-serif;
+h1{
+    font-size: 500%;
+    color: #ffffff;
+    margin-top: 170px;
+    margin-left: 95px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    
+  }
+  p{
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-left: 95px ;
+    font-size: 30px;
+  }
+h2{
+    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(33, 31, 31);
+
+   
+   
 }
-p {
-  color: #ffffff;
-  font-family: sans-serif;
-  margin-left: 95px;
-  font-size: 30px;
+.logo_r{
+    margin-top: 1%;
+    width: 40%;
+    height: 30%;
+    margin-left:30%;
 }
-h2 {
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: rgb(33, 31, 31);
+.cont{
+    float: right;
+    background-color:rgba(254, 248, 248, 0.978);
+    width: 400px;
+    height: 80%;
+    height: 80vh;
+    padding: 50px;
 }
-.logo_r {
-  margin-top: 10%;
-  width: 40%;
-  height: 30%;
-  margin-left: 30%;
+.em_b{
+    border-color: aliceblue;
+    background-color: #f7eac7;
+    border-radius: 5px;
+    width: 100%;
+    height: 27px;
+    margin-top: 5px;
+    margin-bottom: 3%;
+    border: 1px solid black;
+    padding: 6px;
+
 }
-.cont {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.762);
-  width: 400px;
-  height: 80%;
-  height: 80vh;
-  padding: 50px;
+.pa_b{
+    border-color: aliceblue;
+    background-color: #f7eac7;
+    border-radius: 5px;
+    width: 100%;
+    height: 27px;
+    margin-top: 5px;
+    margin-bottom:3%;
+    border: 1px solid black;
+    padding: 6px;
 }
-.em_b {
-  border-color: aliceblue;
-  border-radius: 5px;
-  width: 100%;
-  height: 27px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid black;
+.re_b{
+    border-color: aliceblue;
+    background-color: #f7eac7;
+    border-radius: 5px;
+    width: 100%;
+    height: 27px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    padding: 6px;
 }
-.pa_b {
-  border-color: aliceblue;
-  border-radius: 5px;
-  width: 100%;
-  height: 27px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid black;
+.ag_b{
+    border-color: aliceblue;
+    background-color: #f7eac7;
+    border-radius: 5px;
+    margin-top: 5px;
+    width:145%;
+    height: 29px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 6px;
+   
 }
-.re_b {
-  border-color: aliceblue;
-  border-radius: 5px;
-  width: 100%;
-  height: 27px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  border: 1px solid black;
+.ge_b{
+     
+    border-radius: 5px;
+    margin-top: 5px;
+    width:75%;
+    height: 42px;
+    border: 2px solid rgb(193, 190, 190);
+    background-color: #f7eac7;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    margin-left: 30%;
+   
+    
 }
 .ag_b {
   border-color: aliceblue;
@@ -87,32 +125,46 @@ h2 {
   border: 1px solid black;
   margin-right: 20px;
 }
-.but_f {
-  border-radius: 5px;
-  margin-top: 5px;
-  height: 28px;
+.aj{
+    padding-left: 78px;
+    width: 90%;
+     
+     
+    
 }
-.but_d {
-  border-radius: 5px;
-  margin-top: 5px;
-  height: 28px;
+.btnnf{
+    border: 1px solid #5e433a;
+    border-radius: 4px;
+    background: #5e433a;
+    color: aliceblue;
+    padding: 8px;
+    width: 102%;
+    transition-duration: 400ms;
+    margin-right:3px;
+    margin-bottom: 20px;
+    
 }
-.aj {
-  padding-right: 100px;
+.btnnf:hover{
+    transition-duration: 400ms;
+    background-color: #452e27;
+    
 }
-.btnnf {
-  border: 1px solid #1569f7;
-  border-radius: 4px;
-  background: #1569f7;
-  color: aliceblue;
-  padding: 10px;
-  width: 50%;
-  transition-duration: 400ms;
-  margin-right: 3px;
+.siz_f{
+   border: 1px solid #948451;
+    border-radius: 4px;
+    background: #948451;
+    color:#ffffff;
+    padding: 8px;
+    transition-duration: 400ms;
+    width:48%; 
+    font-weight: bold; 
+    margin-top: 10px;
+    margin-left: 25%;
+ 
 }
-.btnnf:hover {
-  transition-duration: 400ms;
-  background-color: #1150bd;
+#.siz_f:hover{
+    color: #ffffff;
+    background-color:#1569f7 ;
 }
 .siz_f {
   border: 1px solid #1569f7;
@@ -133,4 +185,15 @@ h2 {
 }
 .fix_t {
   width: 100%;
+}
+.fix_t{
+    width:100%;
+   
+    
+}
+.geb{
+    font-weight: bold;
+}
+hr{
+    width: 101%;
 }
