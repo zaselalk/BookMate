@@ -48,107 +48,115 @@
           class="heading-logo"
         />
         <h2 id="tagLine">Your personal digital reading companion.</h2>
-        <button class="search-button" onclick="window.location.href='search.html'">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" class="heading-searchicon"
-            style="fill: rgb(255, 255, 255);">
-            <path
-              d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
-            </path>
-            <path
-              d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z">
-            </path>
-          </svg>SEARCH
+        <button class="search-button hidden" onclick="window.location.href='search.html'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" class="heading-searchicon"
+          style="fill: rgb(255, 255, 255);">
+          <path
+            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+          </path>
+          <path
+            d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z">
+          </path>
+        </svg>
       </div>
+
     </div>
-    <!-- header  -->
-    <!-- bottom navigation  -->
-    <div class="navigation">
-      <a href="index.html">
-        <div class="navSelect activeNavSelect">HOME</div>
-      </a>
-      <a href="technology.html">
-        <div class="navSelect navSelect2">TECH</div>
-      </a>
-      <a href="science.html">
-        <div class="navSelect navSelect3">SCIENCE</div>
-      </a>
-      <a href="maths.html">
-        <div class="navSelect navSelect4">MATHEMATICS</div>
-      </a>
-      <a href="/">
-        <div class="navSelect navSelect5">ALL</div>
-      </a>
-    </div>
-    <!-- bottom navigation  -->
-    <!-- services  -->
-    <div class="bottom-part">
-      <div class="services">
-        <h1>Services</h1>
-        <div class="serviceContent">
-         
-            <div class="service search1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);">
-                <path
-                  d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z">
-                </path>
-                <path d="M8 6h9v2H8z"></path>
-              </svg><br />
-              <p>E-Books</p>
-            </div>
-         
-            <div class="service search2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <circle cx="12.01" cy="12" r="2"></circle>
-                <path d="M11.01 22h2l.5-7h-3l.5 7z"></path>
-                <path d="M12 2a10 10 0 0 0-2.45 19.68l-.15-2.12a8 8 0 1 1 5.21 0l-.15 2.12A10 10 0 0 0 12 2z"></path>
-                <path
-                  d="M15.32 9.61a3.44 3.44 0 0 1 .37.68 3.83 3.83 0 0 1 .23.75 3.57 3.57 0 0 1 .09.8 3.66 3.66 0 0 1-.09.81 3.83 3.83 0 0 1-.23.75 3.44 3.44 0 0 1-.37.68 4.7 4.7 0 0 1-.35.43l-.19 2.62a5.33 5.33 0 0 0 .58-.31A5.86 5.86 0 0 0 17 15.2a5.57 5.57 0 0 0 .55-1 5.89 5.89 0 0 0 .35-1.13 6.06 6.06 0 0 0 .1-1.23 6.22 6.22 0 0 0-.13-1.21A6.09 6.09 0 0 0 17 8.49a6.29 6.29 0 0 0-.73-.89 5.67 5.67 0 0 0-.89-.73 6.3 6.3 0 0 0-1-.56A6.17 6.17 0 0 0 13.21 6a6.11 6.11 0 0 0-2.41 0 5.51 5.51 0 0 0-1.13.36 5.57 5.57 0 0 0-1 .55 5.67 5.67 0 0 0-.89.73 6.29 6.29 0 0 0-.78.85 6.09 6.09 0 0 0-.9 2.14 6.21 6.21 0 0 0-.1 1.21 6.06 6.06 0 0 0 .12 1.21 5.89 5.89 0 0 0 .35 1.13 5.57 5.57 0 0 0 .55 1 6.24 6.24 0 0 0 1.62 1.62 5.33 5.33 0 0 0 .58.31L9 14.51a4.7 4.7 0 0 1-.35-.43 3.44 3.44 0 0 1-.37-.68 3.83 3.83 0 0 1-.23-.75 3.65 3.65 0 0 1-.05-.81 3.56 3.56 0 0 1 .08-.8 3.83 3.83 0 0 1 .23-.75 3.44 3.44 0 0 1 .37-.68 4 4 0 0 1 .5-.61 3.87 3.87 0 0 1 .59-.48 3.44 3.44 0 0 1 .68-.37 3.86 3.86 0 0 1 .75-.24 4.36 4.36 0 0 1 1.61 0 3.86 3.86 0 0 1 .75.24 3.58 3.58 0 0 1 1.27.85 3.49 3.49 0 0 1 .49.61z">
-                </path>
-              </svg>
-              <p>Audio-Books</p>
-            </div>
-         
-            <div class="service search3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <path
-                  d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
-                </path>
-              </svg>
-              <p>Search-Books</p>
-            </div>
-         
-            <div class="service search4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <path
-                  d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V5h7v14H4zm9 0V5h7l.001 14H13z">
-                </path>
-                <path d="M15 7h3v2h-3zm0 4h3v2h-3z"></path>
-              </svg>
-              <p>Digital magazines</p>
-            </div>
-         
-            <div class="service search5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <path
-                  d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z">
-                </path>
-                <path d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z"></path>
-              </svg>
-              <p>Online newspapers</p>
-            </div>
-         
-            <div class="service search6">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <path
-                  d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z">
-                </path>
-                <path
-                  d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z">
-                </path>
-              </svg>
-              <p>Reference</p>
-            </div>
-        </div>
+  </div>
+  <!-- header  -->
+  <!-- bottom navigation  -->
+  <div class="navigation">
+    <a href="index.html">
+      <div class="navSelect activeNavSelect">HOME</div>
+    </a>
+    <a href="technology.html">
+      <div class="navSelect navSelect2 hidden">TECH</div>
+    </a>
+    <a href="science.html">
+      <div class="navSelect navSelect3 hidden">SCIENCE</div>
+    </a>
+    <a href="maths.html">
+      <div class="navSelect navSelect4 hidden">MATHEMATICS</div>
+    </a>
+    <a href="/">
+      <div class="navSelect navSelect5 hidden">ALL</div>
+    </a>
+  </div>
+  <!-- bottom navigation  -->
+  <!-- services  -->
+  <div class="bottom-part">
+    <div class="services">
+      <h1>Services</h1>
+      <div class="serviceContent">
+        <a href="/">
+          <div class="service search1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgb(0, 0, 0);">
+              <path
+                d="M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z">
+              </path>
+              <path d="M8 6h9v2H8z"></path>
+            </svg><br />
+            <p>E-Books</p>
+          </div>
+        </a>
+        <a href="/">
+          <div class="service search2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+              <circle cx="12.01" cy="12" r="2"></circle>
+              <path d="M11.01 22h2l.5-7h-3l.5 7z"></path>
+              <path d="M12 2a10 10 0 0 0-2.45 19.68l-.15-2.12a8 8 0 1 1 5.21 0l-.15 2.12A10 10 0 0 0 12 2z"></path>
+              <path
+                d="M15.32 9.61a3.44 3.44 0 0 1 .37.68 3.83 3.83 0 0 1 .23.75 3.57 3.57 0 0 1 .09.8 3.66 3.66 0 0 1-.09.81 3.83 3.83 0 0 1-.23.75 3.44 3.44 0 0 1-.37.68 4.7 4.7 0 0 1-.35.43l-.19 2.62a5.33 5.33 0 0 0 .58-.31A5.86 5.86 0 0 0 17 15.2a5.57 5.57 0 0 0 .55-1 5.89 5.89 0 0 0 .35-1.13 6.06 6.06 0 0 0 .1-1.23 6.22 6.22 0 0 0-.13-1.21A6.09 6.09 0 0 0 17 8.49a6.29 6.29 0 0 0-.73-.89 5.67 5.67 0 0 0-.89-.73 6.3 6.3 0 0 0-1-.56A6.17 6.17 0 0 0 13.21 6a6.11 6.11 0 0 0-2.41 0 5.51 5.51 0 0 0-1.13.36 5.57 5.57 0 0 0-1 .55 5.67 5.67 0 0 0-.89.73 6.29 6.29 0 0 0-.78.85 6.09 6.09 0 0 0-.9 2.14 6.21 6.21 0 0 0-.1 1.21 6.06 6.06 0 0 0 .12 1.21 5.89 5.89 0 0 0 .35 1.13 5.57 5.57 0 0 0 .55 1 6.24 6.24 0 0 0 1.62 1.62 5.33 5.33 0 0 0 .58.31L9 14.51a4.7 4.7 0 0 1-.35-.43 3.44 3.44 0 0 1-.37-.68 3.83 3.83 0 0 1-.23-.75 3.65 3.65 0 0 1-.05-.81 3.56 3.56 0 0 1 .08-.8 3.83 3.83 0 0 1 .23-.75 3.44 3.44 0 0 1 .37-.68 4 4 0 0 1 .5-.61 3.87 3.87 0 0 1 .59-.48 3.44 3.44 0 0 1 .68-.37 3.86 3.86 0 0 1 .75-.24 4.36 4.36 0 0 1 1.61 0 3.86 3.86 0 0 1 .75.24 3.58 3.58 0 0 1 1.27.85 3.49 3.49 0 0 1 .49.61z">
+              </path>
+            </svg><br />
+            <p>Audio-Books</p>
+          </div>
+        </a>
+        <a href="/">
+          <div class="service search3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+              <path
+                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+              </path>
+            </svg><br />
+            <p>Search-Books</p>
+          </div>
+        </a>
+        <a href="/">
+          <div class="service search4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+              <path
+                d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zM4 19V5h7v14H4zm9 0V5h7l.001 14H13z">
+              </path>
+              <path d="M15 7h3v2h-3zm0 4h3v2h-3z"></path>
+            </svg><br />
+            <p>Digital magazines</p>
+          </div>
+        </a>
+        <a href="/">
+          <div class="service search5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+              <path
+                d="M19.875 3H4.125C2.953 3 2 3.897 2 5v14c0 1.103.953 2 2.125 2h15.75C21.047 21 22 20.103 22 19V5c0-1.103-.953-2-2.125-2zm0 16H4.125c-.057 0-.096-.016-.113-.016-.007 0-.011.002-.012.008L3.988 5.046c.007-.01.052-.046.137-.046h15.75c.079.001.122.028.125.008l.012 13.946c-.007.01-.052.046-.137.046z">
+              </path>
+              <path d="M6 7h6v6H6zm7 8H6v2h12v-2h-4zm1-4h4v2h-4zm0-4h4v2h-4z"></path>
+            </svg><br />
+            <p>Online newspapers</p>
+          </div>
+        </a>
+        <a href="/">
+          <div class="service search6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+              <path
+                d="M8.465 11.293c1.133-1.133 3.109-1.133 4.242 0l.707.707 1.414-1.414-.707-.707c-.943-.944-2.199-1.465-3.535-1.465s-2.592.521-3.535 1.465L4.929 12a5.008 5.008 0 0 0 0 7.071 4.983 4.983 0 0 0 3.535 1.462A4.982 4.982 0 0 0 12 19.071l.707-.707-1.414-1.414-.707.707a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.122-2.121z">
+              </path>
+              <path
+                d="m12 4.929-.707.707 1.414 1.414.707-.707a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.122 2.121c-1.133 1.133-3.109 1.133-4.242 0L10.586 12l-1.414 1.414.707.707c.943.944 2.199 1.465 3.535 1.465s2.592-.521 3.535-1.465L19.071 12a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0z">
+              </path>
+            </svg><br />
+            <p>Reference</p>
+          </div>
+        </a>
+
       </div>
     </div>
     <!-- about us  -->
@@ -212,7 +220,8 @@
     </div>
     <!-- about us  -->
     <!-- Contact us  -->
-    <div class="contact-section" id="contact">
+    <div id="contact">
+
       <div class="contact-content-section">
         <div class="contact-content-title">
           <h1>Contact us</h1>
@@ -234,13 +243,7 @@
               <span>Email Address</span>
             </div>
             <div class="input-box w50">
-              <input
-                type="tel"
-                name="tel"
-                class="contact tel"
-                pattern="[0-9]{10}"
-                required
-              />
+              <input type="tel" name="tel" class="contact tel" pattern="[0-9]{10}" required />
               <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
                 <path
                   d="M17.707 12.293a.999.999 0 0 0-1.414 0l-1.594 1.594c-.739-.22-2.118-.72-2.992-1.594s-1.374-2.253-1.594-2.992l1.594-1.594a.999.999 0 0 0 0-1.414l-4-4a.999.999 0 0 0-1.414 0L3.581 5.005c-.38.38-.594.902-.586 1.435.023 1.424.4 6.37 4.298 10.268s8.844 4.274 10.269 4.298h.028c.528 0 1.027-.208 1.405-.586l2.712-2.712a.999.999 0 0 0 0-1.414l-4-4.001zm-.127 6.712c-1.248-.021-5.518-.356-8.873-3.712-3.366-3.366-3.692-7.651-3.712-8.874L7 4.414 9.586 7 8.293 8.293a1 1 0 0 0-.272.912c.024.115.611 2.842 2.271 4.502s4.387 2.247 4.502 2.271a.991.991 0 0 0 .912-.271L17 14.414 19.586 17l-2.006 2.005z">
@@ -249,12 +252,7 @@
               <span>Phone number</span>
             </div>
             <div class="input-box w50">
-              <input
-                type="text"
-                name="fname"
-                class="contact contactfname"
-                required
-              />
+              <input type="text" name="fname" class="contact contactfname" required />
               <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
                 <path d="M20.005 5.995h-1v2h1v8h-1v2h1c1.103 0 2-.897 2-2v-8c0-1.102-.898-2-2-2zm-14 4H15v4H6.005z">
                 </path>
@@ -265,12 +263,7 @@
               <span>First Name</span>
             </div>
             <div class="input-box w50">
-              <input
-                type="text"
-                name="lname"
-                class="contact contactlname"
-                required
-              />
+              <input type="text" name="lname" class="contact contactlname" required />
               <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
                 <path d="M20.005 5.995h-1v2h1v8h-1v2h1c1.103 0 2-.897 2-2v-8c0-1.102-.898-2-2-2zm-14 4H15v4H6.005z">
                 </path>
@@ -290,6 +283,7 @@
                 </path>
               </svg>
               <span>Write your message here</span>
+
             </div>
             <div class="input-box w100">
               <input type="submit" name="submit" value="SEND MESSAGE" />
