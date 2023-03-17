@@ -1,0 +1,167 @@
+@font-face {
+  /*Import font Exo  */
+  font-family: "Exo";
+  src: url("fonts\Exo-Regular.otf");
+}
+
+@font-face {
+  /*Import font Fjalla One*/
+  font-family: "Fjalla One";
+  src: url("fonts\FjallaOne-Regular.ttf");
+}
+
+.rectangle22 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 555px;
+  background: #d8cca1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-summary {
+  margin-bottom: -90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-details {
+  margin: 30px;
+}
+
+.bookimage {
+  background: #d9d9d9;
+  padding: 20px;
+}
+
+.booktitle {
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  color: #f0eded;
+}
+
+.book-btn {
+  margin-bottom: 0px;
+  margin-top: 60px;
+}
+
+.author {
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  color: #bbb7b7;
+}
+
+.downloadbtn {
+  width: 200px;
+  background: #0872af73;
+  border-radius: 50px;
+  padding: 14px 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.previewbtn {
+  width: 200px;
+  background: #453dd0;
+  border-radius: 50px;
+  padding: 14px 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.preview-icon {
+  border: 1.5px solid #f6f1f1;
+}
+
+.book-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(10, 9, 9, 0.6);
+  padding: 8% 10%;
+  margin-top: 100px;
+}
+.similar-section h2 {
+  margin: 0 5%;
+}
+
+.similar-books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+  color: #000000;
+}
+
+.card-top-left {
+  box-sizing: border-box;
+  width: 764px;
+  height: 302px;
+  background: #e7f4fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.topimage {
+  width: 186px;
+  height: 220px;
+  background: #d9d9d9; /*error image*/
+}
+.top-left-bookTitle {
+  width: 422px;
+  height: 55px;
+  font-family: "Fjalla One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+  color: #000000;
+}
+.top-left-book-author {
+  width: 325px;
+  height: 45px;
+  font-family: "Exo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.card_top-right {
+  box-sizing: border-box;
+  height: 302px;
+  background: #e7f4fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.container_bottom-left {
+  box-sizing: border-box;
+  width: 764px;
+  height: 302px;
+  background: #e7f4fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.container_bottom-right {
+  box-sizing: border-box;
+  width: 764px;
+  height: 302px;
+  background: #e7f4fc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}

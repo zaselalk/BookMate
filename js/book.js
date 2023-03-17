@@ -3949,7 +3949,7 @@ function loadBooks(cate) {
 
       var btn1 = document.createElement("a");
       btn1.textContent = "View";
-      btn1.setAttribute("href", details[x].pagePath);
+      btn1.setAttribute("href", `../book.html?id=${details[x].id}`);
       btn1.classList.add("cardBtn", "cardBtn1");
       cardBtnView.appendChild(btn1);
 
@@ -4188,4 +4188,23 @@ function searchBook() {
     left: 100,
     behavior: "smooth",
   });
+}
+
+function getSingleBook(book_id) {
+  const book = books.filter((book) => book.id == book_id);
+  return book[0];
+}
+
+function loadSimlarBooks(book_id) {
+  const similarBooks = books.filter(
+    (book) =>
+      book.id != book_id && book.category == getSingleBook(book_id).category
+  );
+
+  const returnArray = [];
+  for (let i = 0; i < 5; i++) {
+    returnArray.push(similarBooks[i]);
+  }
+
+  return returnArray;
 }
