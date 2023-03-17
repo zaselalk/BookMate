@@ -1,17 +1,17 @@
 @font-face {
   font-family: "FjallaOne";
-  src: url("fonts/FjallaOne.ttf");
+  src: url("./fonts/FjallaOne.ttf");
 }
 
 @font-face {
   font-family: "exo";
-  src: url("fonts/exo.ttf");
+  src: url("./fonts/exo.ttf");
 }
 
 .mainbg {
   width: 100%;
   height: 550px;
-  background-image: url("images/search_Img/mainBg.jpg");
+  background-image: url("../images/search_Img/mainBg.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -28,22 +28,29 @@
   justify-content: center;
 }
 
+.search {
+  margin: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .searchInput {
   width: 700px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 30px;
-  color: white;
+  color: rgb(105, 96, 96);
   height: 30px;
-  border: 4px solid white;
+  border: 4px solid rgb(104, 96, 96);
   background: transparent;
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
   padding-right: 70px;
 }
 
 .searchicon {
-  width: 30px;
+  color: #e7f4fc;
 }
 
 .SearchImgDiv {
@@ -67,13 +74,15 @@
 }
 
 .search-btn {
-  background: white;
-  padding: 10px;
+  background: #3279ca;
+  color: #e7f4fc;
+  padding: 20px 10px;
   border: 1px solid white;
   margin-top: 20px;
-  width: 120px;
-  color: black;
+  width: 150px;
+  border-radius: 4px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .mainTextPara {
