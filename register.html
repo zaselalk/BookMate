@@ -1,304 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="global.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <style>
+      .navbar-content {
+        justify-content: start;
+        box-shadow: none;
+        box-shadow: none;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register</title>
-  <!-- <link rel="stylesheet" href="./styles/register.css" /> -->
-  <link rel="stylesheet" href="global.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
-  <style>
-    .navbar-content {
-      justify-content: start;
-      box-shadow: none;
-      box-shadow: none;
-    }
+      .dfe {
+        color: rgb(70, 66, 66);
+        text-align: center;
+      }
 
-    .dfe {
-      color: rgb(70, 66, 66);
-      text-align: center;
-    }
+      .title-mate {
+        padding: 15% 5%;
+      }
 
-    .title-mate {
-      padding: 15% 5%;
-    }
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./images/login/sigup.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
 
-    body {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./images/login/sigup.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
+      h1 {
+        font-size: 500%;
+        color: #ffffff;
 
-    h1 {
-      font-size: 500%;
-      color: #ffffff;
+        margin-left: 95px;
+        margin-bottom: 30px;
+        font-family: sans-serif;
+      }
 
-      margin-left: 95px;
-      margin-bottom: 30px;
-      font-family: sans-serif;
-    }
+      p {
+        color: #ffffff;
+        font-family: sans-serif;
+        margin-left: 95px;
+        font-size: 30px;
+      }
 
-    p {
-      color: #ffffff;
-      font-family: sans-serif;
-      margin-left: 95px;
-      font-size: 30px;
-    }
+      .titl {
+        margin-top: 50px;
+      }
 
-    .titl {
-      margin-top: 50px;
-    }
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(33, 31, 31);
+      }
 
-    h2 {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      color: rgb(33, 31, 31);
-    }
+      .logo_r {
+        width: 40%;
+        margin-left: 30%;
+      }
 
-    .logo_r {
-      width: 40%;
-      margin-left: 30%;
-    }
+      .cont {
+        float: right;
+        background-color: rgba(254, 248, 248, 0.978);
+        width: 400px;
+        height: 100vh;
+        padding: 40px 65px;
+      }
 
-    .cont {
-      float: right;
-      background-color: rgba(254, 248, 248, 0.978);
-      width: 400px;
-      height: 100vh;
-      padding: 40px 65px;
-    }
+      .em_b {
+        border-color: aliceblue;
+        background-color: #f7eac7;
+        border-radius: 5px;
+        width: 100%;
+        height: 27px;
+        margin-top: 5px;
+        margin-bottom: 3%;
+        border: 1px solid black;
+        padding: 6px;
+      }
 
-    .em_b {
-      border-color: aliceblue;
-      background-color: #f7eac7;
-      border-radius: 5px;
-      width: 100%;
-      height: 27px;
-      margin-top: 5px;
-      margin-bottom: 3%;
-      border: 1px solid black;
-      padding: 6px;
-    }
+      .pa_b {
+        border-color: aliceblue;
+        background-color: #f7eac7;
+        border-radius: 5px;
+        width: 100%;
+        height: 27px;
+        margin-top: 5px;
+        margin-bottom: 3%;
+        border: 1px solid black;
+        padding: 6px;
+      }
 
-    .pa_b {
-      border-color: aliceblue;
-      background-color: #f7eac7;
-      border-radius: 5px;
-      width: 100%;
-      height: 27px;
-      margin-top: 5px;
-      margin-bottom: 3%;
-      border: 1px solid black;
-      padding: 6px;
-    }
+      .re_b {
+        border-color: aliceblue;
+        background-color: #f7eac7;
+        border-radius: 5px;
+        width: 100%;
+        height: 27px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border: 1px solid black;
+        padding: 6px;
+      }
 
-    .re_b {
-      border-color: aliceblue;
-      background-color: #f7eac7;
-      border-radius: 5px;
-      width: 100%;
-      height: 27px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-      border: 1px solid black;
-      padding: 6px;
-    }
+      .ag_b {
+        border-color: aliceblue;
+        background-color: #f7eac7;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 145%;
+        height: 29px;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        padding: 6px;
+      }
 
-    .ag_b {
-      border-color: aliceblue;
-      background-color: #f7eac7;
-      border-radius: 5px;
-      margin-top: 5px;
-      width: 145%;
-      height: 29px;
-      margin-bottom: 30px;
-      border: 1px solid black;
-      padding: 6px;
-    }
+      .ge_b {
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 100%;
+        /* height: 42px; */
+        border: 2px solid rgb(193, 190, 190);
+        background-color: #f7eac7;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        margin-left: 35%;
+      }
+      .aj {
+        padding-left: 15%;
+      }
+      .ag_b {
+        border-color: aliceblue;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 99%;
+        height: 29px;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        margin-left: 0;
+      }
 
-    .ge_b {
-      border-radius: 5px;
-      margin-top: 5px;
-      width: 75%;
-      height: 42px;
-      border: 2px solid rgb(193, 190, 190);
-      background-color: #f7eac7;
-      margin-bottom: 30px;
-      border: 1px solid black;
-      margin-left: 30%;
-    }
+      .ge_b {
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 100%;
+        height: 31px;
+        border: 2px solid rgb(193, 190, 190);
+        margin-bottom: 30px;
+        border: 1px solid black;
+        margin-right: 20px;
+      }
 
-    .ag_b {
-      border-color: aliceblue;
-      border-radius: 5px;
-      margin-top: 5px;
-      width: 99%;
-      height: 29px;
-      margin-bottom: 30px;
-      border: 1px solid black;
-      margin-left: 0;
-    }
+      .ge_b {
+        height: 40px;
+      }
 
-    .ge_b {
-      border-radius: 5px;
-      margin-top: 5px;
-      width: 100%;
-      height: 31px;
-      border: 2px solid rgb(193, 190, 190);
-      margin-bottom: 30px;
-      border: 1px solid black;
-      margin-right: 20px;
-    }
+      .btnnf {
+        border: 1px solid #5e433a;
+        border-radius: 4px;
+        background: #5e433a;
+        color: aliceblue;
+        padding: 8px;
+        width: 102%;
+        transition-duration: 400ms;
+        margin-right: 3px;
+        margin-bottom: 20px;
+      }
 
-    .ge_b {
-      height: 40px;
-    }
+      .btnnf:hover {
+        transition-duration: 400ms;
+        background-color: #452e27;
+      }
 
-    .btnnf {
-      border: 1px solid #5e433a;
-      border-radius: 4px;
-      background: #5e433a;
-      color: aliceblue;
-      padding: 8px;
-      width: 102%;
-      transition-duration: 400ms;
-      margin-right: 3px;
-      margin-bottom: 20px;
-    }
+      .siz_f {
+        border: 1px solid #948451;
+        border-radius: 4px;
+        background: #948451;
+        color: #ffffff;
+        padding: 8px;
+        transition-duration: 400ms;
+        width: 48%;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 25%;
+      }
 
-    .btnnf:hover {
-      transition-duration: 400ms;
-      background-color: #452e27;
-    }
+      #siz_f:hover {
+        color: #ffffff;
+        background-color: #1569f7;
+      }
 
-    .siz_f {
-      border: 1px solid #948451;
-      border-radius: 4px;
-      background: #948451;
-      color: #ffffff;
-      padding: 8px;
-      transition-duration: 400ms;
-      width: 48%;
-      font-weight: bold;
-      margin-top: 10px;
-      margin-left: 25%;
-    }
+      .siz_f {
+        border: 1px solid #1569f7;
+        border-radius: 4px;
+        background: #ffffff;
+        color: #1569f7;
+        padding: 10px;
+        transition-duration: 400ms;
+        width: 48%;
+        font-weight: bold;
+      }
 
-    #siz_f:hover {
-      color: #ffffff;
-      background-color: #1569f7;
-    }
+      .siz_f:hover {
+        color: #ffffff;
+        background-color: #1569f7;
+      }
 
-    .siz_f {
-      border: 1px solid #1569f7;
-      border-radius: 4px;
-      background: #ffffff;
-      color: #1569f7;
-      padding: 10px;
-      transition-duration: 400ms;
-      width: 48%;
-      font-weight: bold;
-    }
+      .tab_s {
+        margin-top: 10px;
+        width: 90%;
+      }
 
-    .siz_f:hover {
-      color: #ffffff;
-      background-color: #1569f7;
-    }
+      .fix_t {
+        width: 100%;
+      }
 
-    .tab_s {
-      margin-top: 10px;
-      width: 100%;
-    }
+      .fix_t {
+        width: 100%;
+      }
 
-    .fix_t {
-      width: 100%;
-    }
+      .geb {
+        font-weight: bold;
+      }
 
-    .fix_t {
-      width: 100%;
-    }
+      hr {
+        width: 101%;
+      }
+    </style>
+  </head>
 
-    .geb {
-      font-weight: bold;
-    }
+  <body>
+    <header>
+      <nav class="mainNav" id="navbar">
+        <div class="navbar-content" id="navbar-content ">
+          <ul>
+            <a href="./index.html" class="navbar-links">
+              <li>HOME</li>
+            </a>
+            <a href="./aboutus.html" class="navbar-links">
+              <li>ABOUT US</li>
+            </a>
+            <a href="./index.html#contact" class="navbar-links">
+              <li>CONTACT US</li>
+            </a>
 
-    hr {
-      width: 101%;
-    }
-  </style>
-</head>
+            <a href="./category.html" class="navbar-links">
+              <li>CATEGORIES</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="cont">
+      <img class="logo_r" src="./images/logo/logo_1.png" />
+      <h2>Create New Account</h2>
+      <form action="#">
+        <input class="em_b" type="email" id="ema" placeholder="Email" /> <br />
 
-<body>
-  <header>
-    <nav class="mainNav" id="navbar">
-      <div class="navbar-content" id="navbar-content ">
-        <ul>
-          <a href="./index.html" class="navbar-links">
-            <li>HOME</li>
-          </a>
-          <a href="./aboutus.html" class="navbar-links">
-            <li>ABOUT US</li>
-          </a>
-          <a href="./index.html#contact" class="navbar-links">
-            <li>CONTACT US</li>
-          </a>
+        <input
+          class="pa_b"
+          type="password"
+          id="pwd2"
+          placeholder="Password"
+        /><br />
 
-          <a href="./category.html" class="navbar-links">
-            <li>CATEGORIES</li>
-          </a>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="cont">
-    <img class="logo_r" src="./images/logo/logo_1.png" />
-    <h2>Create New Account</h2>
-    <form action="#">
-      <input class="em_b" type="email" id="ema" placeholder="Email" /> <br />
+        <input
+          class="re_b"
+          type="password"
+          id="re_pwd"
+          placeholder="Re-enter password"
+        /><br />
 
-      <input class="pa_b" type="password" id="pwd2" placeholder="Password" /><br />
+        <table class="tab_s">
+          <tr>
+            <td>Birthday</td>
+            <td class="aj">Gender</td>
+          </tr>
+          <tr>
+            <td><input class="ag_b" type="date" id="n_age" /></td>
+            <td>
+              <select class="ge_b">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <div class="fix_t">
+          <input
+            class="btnnf"
+            type="submit"
+            id="sub_n1"
+            value="Register"
+            onclick="register_f()"
+          />
 
-      <input class="re_b" type="password" id="re_pwd" placeholder="Re-enter password" /><br />
-
-      <table class="tab_s">
-        <tr>
-          <td>Birthday</td>
-          <td class="aj">Gender</td>
-        </tr>
-        <tr>
-          <td><input class="ag_b" type="date" id="n_age" /></td>
-          <td>
-            <select class="ge_b">
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-          </td>
-        </tr>
-      </table>
-      <div class="fix_t">
-        <input class="btnnf" type="submit" id="sub_n1" value="Register" onclick="register_f()" />
-
-        <a href="./login.html" class="dfe">Already have an account ? Login In</a>
-      </div>
-    </form>
-  </div>
-  <div class="title-mate">
-    <h1>BOOK MATE</h1>
-    <p>
-      Our library management system is desigened to<br />
-      provide easy access to books,magazines,journals,<br />
-      frindly interface,you can search for available<br />
-      resources.
-    </p>
-  </div>
-  <script src="./js/Register.js"></script>
-</body>
-
+          <a href="./login.html" class="dfe"
+            >Already have an account ? Login In</a
+          >
+        </div>
+      </form>
+    </div>
+    <div class="title-mate">
+      <h1>BOOK MATE</h1>
+      <p>
+        Our library management system is desigened to<br />
+        provide easy access to books,magazines,journals,<br />
+        frindly interface,you can search for available<br />
+        resources.
+      </p>
+    </div>
+    <script src="./js/Register.js"></script>
+  </body>
 </html>

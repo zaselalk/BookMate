@@ -4,11 +4,190 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Book Details</title>
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="book.css" />
-    <!--CSS Style sheet copy-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+
     <style>
+      @font-face {
+        /*Import font Exo  */
+        font-family: "Exo";
+        src: url("fonts\Exo-Regular.otf");
+      }
+
+      @font-face {
+        /*Import font Fjalla One*/
+        font-family: "Fjalla One";
+        src: url("fonts\FjallaOne-Regular.ttf");
+      }
+
+      .rectangle22 {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        height: 555px;
+        background: #d8cca1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .book-summary {
+        margin-bottom: -90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .book-details {
+        margin: 30px;
+      }
+
+      .bookimage {
+        background: #d9d9d9;
+        padding: 20px;
+      }
+
+      .booktitle {
+        font-family: "Fjalla One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 34px;
+        color: #f0eded;
+      }
+
+      .book-btn {
+        margin-bottom: 0px;
+        margin-top: 60px;
+      }
+
+      .author {
+        font-family: "Exo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        color: #bbb7b7;
+      }
+
+      .downloadbtn {
+        width: 200px;
+        background: #0872af73;
+        border-radius: 50px;
+        padding: 14px 10px;
+        color: white;
+        font-size: 15px;
+      }
+
+      .previewbtn {
+        width: 200px;
+        background: #453dd0;
+        border-radius: 50px;
+        padding: 14px 10px;
+        color: white;
+        font-size: 15px;
+      }
+
+      .preview-icon {
+        border: 1.5px solid #f6f1f1;
+      }
+
+      .book-description {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: rgba(10, 9, 9, 0.6);
+        padding: 8% 10%;
+        margin-top: 100px;
+      }
+      .similar-section h2 {
+        margin: 0 5%;
+      }
+
+      .similar-books {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family: "Fjalla One";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 60px;
+        color: #000000;
+      }
+
+      .card-top-left {
+        box-sizing: border-box;
+        width: 764px;
+        height: 302px;
+        background: #e7f4fc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+      }
+
+      .topimage {
+        width: 186px;
+        height: 220px;
+        background: #d9d9d9; /*error image*/
+      }
+      .top-left-bookTitle {
+        width: 422px;
+        height: 55px;
+        font-family: "Fjalla One";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+
+        color: #000000;
+      }
+      .top-left-book-author {
+        width: 325px;
+        height: 45px;
+        font-family: "Exo";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      .card_top-right {
+        box-sizing: border-box;
+        height: 302px;
+        background: #e7f4fc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+      }
+
+      .container_bottom-left {
+        box-sizing: border-box;
+        width: 764px;
+        height: 302px;
+        background: #e7f4fc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+      }
+      .container_bottom-right {
+        box-sizing: border-box;
+        width: 764px;
+        height: 302px;
+        background: #e7f4fc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+      }
+
       .card {
         width: 40%;
         padding: 5px;
@@ -163,8 +342,18 @@
     <hr />
 
     <footer>
-      <!--footer-->
-      <div>Logo</div>
+      <div class="footer-brand">
+        <img
+          src="./images/logo/logo_2.png"
+          alt="logo"
+          width="200px"
+          class="footer-logo"
+        />
+        <div>|</div>
+        <div class="footer-tagline">
+          Your personal digital reading companion.
+        </div>
+      </div>
       <section class="footer-details">
         <div class="footer-contact">
           <div class="flex">
@@ -205,15 +394,33 @@
           </div>
         </div>
 
-        <div>
-          <h4>Links</h4>
-          <ul>
-            <li><a href="/">Home Page</a></li>
-            <li><a href="/">About Page</a></li>
-            <li><a href="/">Contact Page</a></li>
-          </ul>
+        <div class="footer-links">
+          <a href="./index.html">Home Page</a>
+          <a href="./aboutus.html">About Us</a>
+          <a href="./login.html">Login </a>
+          <a href="./register.html">Register </a>
         </div>
       </section>
+
+      <div class="footer-to-top">
+        <a href="#heading">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+            />
+          </svg>
+          Back to Top</a
+        >
+      </div>
     </footer>
     <script src="./js/navbar.js"></script>
     <script src="./js/book.js"></script>
@@ -225,9 +432,13 @@
         const book_description = document.getElementById("description");
         const cover = document.getElementById("rectangle22");
 
+        // update title
+
         let parms = new URL(document.location).searchParams;
         let book_id = parms.get("id");
         let book = getSingleBook(book_id);
+
+        document.title = book.title;
 
         title.innerText = book.title;
         book_author.innerText = "Author -  " + book.author;
