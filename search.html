@@ -8,6 +8,18 @@
 
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="styles/searchStyle.css" />
+    <style>
+      .search-your-book {
+        display: flex;
+        justify-content: center;
+        color: #8b8181;
+        text-align: center;
+        width: 90%;
+      }
+      footer {
+        margin-top: 200px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -50,13 +62,19 @@
           type="text"
           class="searchInput"
           id="searchBookInput"
-          placeholder="type and press enter"
+          placeholder="Type a Keyword Ex: The Prince "
+          onkeyup="searchBookOnKeyPress()"
         />
         <button class="search-btn" type="submit">SEARCH</button>
       </form>
     </div>
 
-    <div class="searchResaults" id="searchResaults"></div>
+    <div class="searchResaults" id="searchResaults">
+      <div class="search-your-book">
+        Check Wheather Your Favourite Book is in Our Library, Type Your Keyword
+        and NO NEED to PRESS Enter. I will handle it for you :)
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
