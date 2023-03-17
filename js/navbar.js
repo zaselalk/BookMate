@@ -14,20 +14,6 @@ function scrollFunction() {
     document.getElementById("navbar-content ").style.background = "#f6eac7";
     changeColorOfLinks("#7c5245");
     document.getElementById("login-btn").style.background = "none";
-    document.getElementById("login-btn").style.color = "black";
-    document
-      .getElementById("login-btn")
-      .addEventListener(
-        "mouseover",
-        () =>
-          (document.getElementById("login-btn").style.background = "#f6eac7")
-      );
-    document
-      .getElementById("login-btn")
-      .addEventListener(
-        "mouseout",
-        () => (document.getElementById("login-btn").style.background = "white")
-      );
   } else {
     document.getElementById("navbar-content ").style.background = "transparent";
     changeColorOfLinks("white");
