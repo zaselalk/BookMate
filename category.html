@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Book</title>
-
+    <title>Category page</title>
+    <link rel="stylesheet" href="./styles/category.css" />
     <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="styles/searchStyle.css" />
     <link
       rel="icon"
       type="image/png"
@@ -20,18 +19,6 @@
       sizes="16x16"
       href="./images/favicon/favicon-16x16.png"
     />
-    <style>
-      .search-your-book {
-        display: flex;
-        justify-content: center;
-        color: #8b8181;
-        text-align: center;
-        width: 90%;
-      }
-      footer {
-        margin-top: 200px;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -62,33 +49,49 @@
         <hr class="nav-divider" />
       </nav>
     </header>
-    <div class="mainbg">
-      <div class="darkBg">
-        <h1 class="mainTextheading">Search Books</h1>
+
+    <!-- Category page -->
+
+    <header>
+      <div class="header">
+        <h2 class="header-title">CATEGORY PAGE</h2>
       </div>
+    </header>
+
+    <!--categories-->
+    <div class="categories">
+      <a href="./category/technology.html" class="category">
+        <p>Technology</p>
+      </a>
+      <a href="./category/short_stories.html" class="category">
+        <p>Short Stories</p>
+      </a>
+      <a href="./category/self_help.html" class="category">
+        <p>Self-help</p>
+      </a>
+      <a href="./category/science.html" class="category">
+        <p>Science</p>
+      </a>
+      <a href="./category/romance.html" class="category">
+        <p>Romance</p>
+      </a>
+      <a href="./category/maths.html" class="category">
+        <p>Maths</p>
+      </a>
+      <a href="./category/historical_fiction.html" class="category">
+        <p>Historical Fictions</p>
+      </a>
+      <a href="./category/cookbooks_and_food.html" class="category">
+        <p>Cook books and Foods</p>
+      </a>
+      <a href="./category/biology.html" class="category">
+        <p>Biology</p>
+      </a>
+      <a href="./category/adventure _stories.html" class="category">
+        <p>Adventure Stories</p>
+      </a>
     </div>
 
-    <div class="search">
-      <form onsubmit="searchBook()">
-        <input
-          type="text"
-          class="searchInput"
-          id="searchBookInput"
-          placeholder="Type a Keyword Ex: The Prince "
-          onkeyup="searchBookOnKeyPress()"
-        />
-        <button class="search-btn" type="submit">SEARCH</button>
-      </form>
-    </div>
-
-    <div class="searchResaults" id="searchResaults">
-      <div class="search-your-book">
-        Check Wheather Your Favourite Book is in Our Library, Type Your Keyword
-        and NO NEED to PRESS Enter. I will handle it for you :)
-      </div>
-    </div>
-
-    <!-- footer -->
     <footer>
       <div class="footer-brand">
         <img
@@ -171,7 +174,5 @@
       </div>
     </footer>
     <script src="./js/navbar.js"></script>
-    <script src="./js/animationScript.js"></script>
-    <script src="./js/book.js"></script>
   </body>
 </html>
