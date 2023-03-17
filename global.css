@@ -132,14 +132,18 @@ nav {
 /* FOOTER STYLES */
 footer {
   margin-top: 100px;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
+  /* justify-content: space-between;
+  align-items: center; */
+  /* width: 90%; */
   background: #e7e4dd;
   padding: 5%;
   margin-bottom: 0;
 }
 
+.cat-footer {
+  display: inline-block;
+  width: 90%;
+}
 .footer-contact div {
   padding: 3px;
 }
