@@ -1,230 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="global.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
-  <!-- <link rel="stylesheet" href="./styles/signin.css" /> -->
-  <link rel="stylesheet" href="global.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <style>
+      .navbar-content {
+        justify-content: start;
+        box-shadow: none;
+      }
 
-  <style>
-    .navbar-content {
-      justify-content: start;
-      box-shadow: none;
-    }
+      h1 {
+        font-size: 500%;
+        color: #ffffff;
+        padding: 15% 8% 2% 10%;
+        font-family: sans-serif;
+      }
 
-    h1 {
-      font-size: 500%;
-      color: #ffffff;
-      padding: 15% 8% 2% 10%;
-      font-family: sans-serif;
-    }
+      p {
+        color: #ffffff;
+        font-family: sans-serif;
+        margin-left: 10%;
+        font-size: 30px;
+      }
 
-    p {
-      color: #ffffff;
-      font-family: sans-serif;
-      margin-left: 10%;
-      font-size: 30px;
-    }
+      h2 {
+        margin-top: 10%;
+        padding-bottom: 10px;
+        text-align: center;
+        color: rgb(33, 31, 31);
+      }
 
-    h2 {
-      margin-top: 10%;
-      padding-bottom: 10px;
-      text-align: center;
-      color: rgb(33, 31, 31);
-    }
+      .logo_n {
+        margin-top: 1%;
+        width: 40%;
+        height: 30%;
+        margin-left: 30%;
+      }
 
-    .logo_n {
-      margin-top: 1%;
-      width: 40%;
-      height: 30%;
-      margin-left: 30%;
-    }
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("./images/login/sigup.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        overflow: hidden;
+      }
 
-    body {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("./images/login/sigup.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      overflow: hidden;
-    }
+      .container {
+        float: right;
+        background-color: rgba(254, 248, 248, 0.978);
+        width: 400px;
+        height: 90vh;
+        padding: 50px;
+      }
 
-    .container {
-      float: right;
-      background-color: rgba(254, 248, 248, 0.978);
-      width: 400px;
-      height: 90vh;
-      padding: 50px;
-    }
+      .f_name {
+        border-radius: 6px;
+        border-color: rgb(231, 231, 236);
+        background-color: #f7eac7;
+        width: 100%;
+        height: 28px;
+        margin-top: 5px;
+        margin-bottom: 3%;
+        border: 1px solid black;
+        padding: 5px;
+      }
 
-    .f_name {
-      border-radius: 6px;
-      border-color: rgb(231, 231, 236);
-      background-color: #f7eac7;
-      width: 100%;
-      height: 28px;
-      margin-top: 5px;
-      margin-bottom: 3%;
-      border: 1px solid black;
-      padding: 5px;
-    }
+      .f_pwd {
+        border-radius: 6px;
+        border-color: rgb(231, 231, 236);
+        background-color: #f7eac7;
+        width: 100%;
+        height: 28px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        padding: 5px;
+      }
 
-    .f_pwd {
-      border-radius: 6px;
-      border-color: rgb(231, 231, 236);
-      background-color: #f7eac7;
-      width: 100%;
-      height: 28px;
-      margin-top: 5px;
-      margin-bottom: 15px;
-      border: 1px solid black;
-      padding: 5px;
-    }
+      .us {
+        font-family: sans-serif;
+      }
 
-    .us {
-      font-family: sans-serif;
-    }
+      .bu_t {
+        text-decoration: none;
+        border: 1px solid #1569f7;
+        padding: 10px;
+        border-radius: 4px;
+        color: #1569f7;
+        width: 80px;
+        font-size: 14px;
+        text-align: center;
+        transition-duration: 400ms;
+      }
 
-    .bu_t {
-      text-decoration: none;
-      border: 1px solid #1569f7;
-      padding: 10px;
-      border-radius: 4px;
-      color: #1569f7;
-      width: 80px;
-      font-size: 14px;
-      text-align: center;
-      transition-duration: 400ms;
-    }
+      .a_a {
+        text-decoration: none;
+        border: 1px solid #1569f7;
+        padding: 10px;
+        border-radius: 4px;
+        background: #1569f7;
+        color: aliceblue;
+        width: 80%;
+        font-size: 14px;
+        text-align: center;
+        transition-duration: 400ms;
+        margin-right: 10px;
+      }
 
-    .a_a {
-      text-decoration: none;
-      border: 1px solid #1569f7;
-      padding: 10px;
-      border-radius: 4px;
-      background: #1569f7;
-      color: aliceblue;
-      width: 80%;
-      font-size: 14px;
-      text-align: center;
-      transition-duration: 400ms;
-      margin-right: 10px;
-    }
+      .a_a:hover {
+        background-color: #1569f7;
+        color: white;
+        transition-duration: 400ms;
+      }
 
-    .a_a:hover {
-      background-color: #1569f7;
-      color: white;
-      transition-duration: 400ms;
-    }
+      .dfe {
+        text-decoration: none;
+        color: #ffffff;
+        cursor: context-menu;
+      }
 
-    .dfe {
-      text-decoration: none;
-      color: #ffffff;
-      cursor: context-menu;
-    }
+      .btnn_f {
+        text-decoration: none;
+        border: 1px solid #948451;
+        font-weight: bold;
+        border-radius: 6px;
+        background: #948451;
+        color: aliceblue;
+        padding: 8px;
+        width: 48%;
+        transition-duration: 400ms;
+        margin-left: 25%;
+        margin-top: 4%;
+        cursor: pointer;
+      }
 
-    .btnn_f {
-      text-decoration: none;
-      border: 1px solid #948451;
-      font-weight: bold;
-      border-radius: 6px;
-      background: #948451;
-      color: aliceblue;
-      padding: 8px;
-      width: 48%;
-      transition-duration: 400ms;
-      margin-left: 25%;
-      margin-top: 4%;
-      cursor: pointer;
-    }
+      .btnn_f:hover {
+        transition-duration: 400ms;
+        background-color: #5e5333;
+      }
 
-    .btnn_f:hover {
-      transition-duration: 400ms;
-      background-color: #5e5333;
-    }
+      .sizn_f {
+        border: 1px solid #5e433a;
+        border-radius: 6px;
+        margin-bottom: 8%;
+        background: #5e433a;
+        color: #ffffff;
+        padding: 8px;
+        width: 103%;
+        transition-duration: 400ms;
+        font-weight: bold;
+        margin-top: 5%;
+      }
 
-    .sizn_f {
-      border: 1px solid #5e433a;
-      border-radius: 6px;
-      margin-bottom: 8%;
-      background: #5e433a;
-      color: #ffffff;
-      padding: 8px;
-      width: 103%;
-      transition-duration: 400ms;
-      font-weight: bold;
-      margin-top: 5%;
-    }
+      .sizn_f:hover {
+        color: #ffffff;
+        background-color: #452e27;
+      }
 
-    .sizn_f:hover {
-      color: #ffffff;
-      background-color: #452e27;
-    }
+      .dek {
+        width: 100%;
+      }
 
-    .dek {
-      width: 100%;
-    }
+      hr {
+        width: 102%;
+      }
+    </style>
+  </head>
 
-    hr {
-      width: 102%;
-    }
-  </style>
-</head>
+  <body>
+    <header>
+      <nav class="mainNav" id="navbar">
+        <div class="navbar-content" id="navbar-content ">
+          <ul>
+            <a href="./index.html" class="navbar-links">
+              <li>HOME</li>
+            </a>
+            <a href="./aboutus.html" class="navbar-links">
+              <li>ABOUT US</li>
+            </a>
+            <a href="./index.html#contact" class="navbar-links">
+              <li>CONTACT US</li>
+            </a>
 
-<body>
-  <header>
-    <nav class="mainNav" id="navbar">
-      <div class="navbar-content" id="navbar-content ">
-        <ul>
-          <a href="./index.html" class="navbar-links">
-            <li>HOME</li>
-          </a>
-          <a href="./aboutus.html" class="navbar-links">
-            <li>ABOUT US</li>
-          </a>
-          <a href="./index.html#contact" class="navbar-links">
-            <li>CONTACT US</li>
-          </a>
+            <a href="./category.html" class="navbar-links">
+              <li>CATEGORIES</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <img class="logo_n" src="./images/logo/logo_1.png" />
+      <h2>User sign in</h2>
+      <form action="#">
+        <input
+          class="f_name"
+          type="text"
+          name="fname"
+          id="f_name"
+          placeholder="Username"
+        /><br />
 
-          <a href="./category.html" class="navbar-links">
-            <li>CATEGORIES</li>
-          </a>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div class="container">
-    <img class="logo_n" src="./images/logo/logo_1.png" />
-    <h2>User sign in</h2>
-    <form action="#">
-      <input class="f_name" type="text" name="fname" id="f_name" placeholder="Username" /><br />
+        <input
+          class="f_pwd"
+          type="password"
+          name="pw"
+          id="n_pwd"
+          placeholder="Password"
+        /><br />
+        <div class="dek">
+          <button class="sizn_f" onclick="myfun()">Sign in</button>
+          <hr />
+          <button class="btnn_f">
+            <a href="./register.html" class="dfe">Create new account</a>
+          </button>
+        </div>
+      </form>
+    </div>
 
-      <input class="f_pwd" type="password" name="pw" id="n_pwd" placeholder="Password" /><br />
-      <div class="dek">
-        <button class="sizn_f" onclick="myfun()">Sign in</button>
-        <hr />
-        <button class="btnn_f">
-          <a href="./register.html" class="dfe">Create new account</a>
-        </button>
-      </div>
-    </form>
-  </div>
-
-  <script src="./js/signin.js"></script>
-  <div>
-    <h1>BOOK MATE</h1>
-    <p>
-      Our library management system is desigened to<br />
-      provide easy access to books,magazines,journals,<br />
-      frindly interface,you can search for available<br />
-      resources.
-    </p>
-  </div>
-</body>
-
+    <script src="./js/signin.js"></script>
+    <div>
+      <h1>BOOK MATE</h1>
+      <p>
+        Our library management system is desigened to<br />
+        provide easy access to books,magazines,journals,<br />
+        frindly interface,you can search for available<br />
+        resources.
+      </p>
+    </div>
+  </body>
 </html>
