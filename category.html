@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category page</title>
-    <link rel="stylesheet" href="./styles/category.css" />
+    <!-- <link rel="stylesheet" href="./styles/category.css" /> -->
     <link rel="stylesheet" href="global.css" />
     <link
       rel="icon"
@@ -19,22 +19,82 @@
       sizes="16x16"
       href="./images/favicon/favicon-16x16.png"
     />
+    <style>
+      .header {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(67, 69, 77, 0.52),
+            rgba(34, 33, 34, 0.73)
+          ),
+          url(images/category/R.jpg);
+      }
+
+      .header-title {
+        color: white;
+        font-size: 55px;
+      }
+
+      .categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 200px 30px;
+      }
+
+      .category {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: 150px;
+        margin: 15px;
+        padding: 50px;
+        background-color: rgba(165, 147, 106, 1);
+        border-radius: 10px;
+      }
+
+      .category:hover {
+        background-color: rgb(148, 129, 87);
+        margin-top: -3px;
+        transition: ease-in;
+        transition-duration: 0.4s;
+      }
+
+      .categories a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <nav class="mainNav" id="navbar">
         <div class="navbar-content" id="navbar-content ">
           <ul>
-            <a href="./index.html" class="navbar-links"> <li>HOME</li></a>
-            <a href="./aboutus.html" class="navbar-links"> <li>ABOUT US</li></a>
-            <a href="./index.html#contact" class="navbar-links"
-              ><li>CONTACT US</li></a
-            >
+            <a href="./index.html" class="navbar-links">
+              <li>HOME</li>
+            </a>
+            <a href="./aboutus.html" class="navbar-links">
+              <li>ABOUT US</li>
+            </a>
+            <a href="./index.html#contact" class="navbar-links">
+              <li>CONTACT US</li>
+            </a>
 
             <a href="./category.html" class="navbar-links">
-              <li>CATEGORIES</li></a
-            >
+              <li>CATEGORIES</li>
+            </a>
           </ul>
+
           <div>
             <div>
               <a class="btn" href="./login.html" id="login-btn">LOGIN</a>
@@ -52,7 +112,7 @@
 
     <!-- Category page -->
 
-    <header>
+    <header id="heading">
       <div class="header">
         <h2 class="header-title">CATEGORY PAGE</h2>
       </div>
