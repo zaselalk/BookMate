@@ -1,4 +1,4 @@
-#BookMate - Your Personal Digital Reading Companion
+# BookMate - Your Personal Digital Reading Companion
 
 ![Feature Image](./documentation/Feature.png)
 
